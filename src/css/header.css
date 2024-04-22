@@ -1,0 +1,88 @@
+.header {
+  position: absolute;
+  top: 41px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1256px;
+  padding: 16px 68px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.container.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 97.5px;
+}
+
+.header-logo-link {
+}
+
+.header-logo-icon {
+  display: block;
+  width: 105px;
+  height: 47.21px;
+}
+
+.nav-links {
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-lang-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.72);
+  border-radius: 4px;
+  color: #000000;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.header-actions {
+}
+
+.phone-link {
+}
+
+.phone-link-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: #000000;
+}
+
+.consultation-btn {
+  min-width: 181px;
+  border: none;
+  padding: 12px;
+  border-radius: 100px;
+  background-color: rgb(255, 184, 1);
+  color: #000000;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.consultation-btn:is(:hover, :focus) {
+  background-color: rgba(255, 184, 1, 0.8);
+}
