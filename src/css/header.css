@@ -9,6 +9,9 @@
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+@media screen and (min-width: 1280px) {
+}
+
 .container.header-container {
   display: flex;
   justify-content: space-between;
@@ -31,7 +34,23 @@
   height: 47.21px;
 }
 
-.nav-links {
+.menu {
+}
+
+.menu-item {
+}
+
+.menu-link {
+  color: #000000;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  transition: color var(--transition-duration-and-func);
+}
+
+.menu-link:is(:hover, :focus) {
+  color: var(--accent-color);
 }
 
 .header-list {
@@ -47,7 +66,8 @@
   padding: 0;
   width: 35px;
   height: 35px;
-  border: 1px solid rgba(0, 0, 0, 0.72);
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.72);
   border-radius: 4px;
   color: #000000;
   font-family: Helvetica;
@@ -55,6 +75,15 @@
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
+  transition: background-color var(--transition-duration-and-func),
+    border-color var(--transition-duration-and-func),
+    color var(--transition-duration-and-func);
+}
+
+.header-lang-btn:is(:hover, :focus) {
+  background-color: var(--accent-color);
+  border-color: transparent;
+  color: var(--white-color);
 }
 
 .header-actions {
@@ -68,6 +97,11 @@
   width: 24px;
   height: 24px;
   fill: #000000;
+  transition: fill var(--transition-duration-and-func);
+}
+
+.phone-link:is(:hover, :focus) .phone-link-icon {
+  fill: var(--accent-color);
 }
 
 .consultation-btn {
@@ -75,14 +109,9 @@
   border: none;
   padding: 12px;
   border-radius: 100px;
-  background-color: rgb(255, 184, 1);
   color: #000000;
   font-family: Inter;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-}
-
-.consultation-btn:is(:hover, :focus) {
-  background-color: rgba(255, 184, 1, 0.8);
 }

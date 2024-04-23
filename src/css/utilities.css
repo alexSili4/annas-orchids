@@ -37,3 +37,12 @@ a {
   position: fixed;
   transform: scale(0);
 }
+
+.btn {
+  background-color: rgb(255, 184, 1);
+  transition: background-color var(--transition-duration-and-func);
+}
+
+.btn:is(:hover, :focus) {
+  background-color: var(--btn-accent-color);
+}
