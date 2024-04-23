@@ -2,6 +2,7 @@
   width: 320px;
   height: 700px;
   padding-top: 232px;
+  padding-bottom: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
     url(/images/hero/bg-img-mobile.jpg);
   background-repeat: no-repeat;
@@ -97,6 +98,25 @@
   height: 48px;
 }
 
+.support-bnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+}
+
+.support-bnt-icon {
+  display: flex;
+  width: 31.2px;
+  height: 31.2px;
+  fill: #000000;
+}
+
 @media screen and (max-width: 1279px) {
   .support-menu.is-hidden {
     opacity: 0;
@@ -139,23 +159,8 @@
     right: 16px;
     bottom: 64px;
   }
-}
 
-.support-bnt {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 0;
-  border: none;
-  border-radius: 50%;
-}
-
-.support-bnt-icon {
-  display: flex;
-  width: 31.2px;
-  height: 31.2px;
-  fill: #000000;
+  .support-bnt {
+    display: none;
+  }
 }

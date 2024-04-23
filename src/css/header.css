@@ -26,9 +26,6 @@
   height: 37.32px;
 }
 
-.menu {
-}
-
 .menu-item {
 }
 
@@ -159,5 +156,23 @@
 
   .header-list {
     gap: 32px;
+  }
+
+  .mobile-menu-toggle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .header-menu {
+    display: none;
+  }
+
+  .header-lang-btn {
+    display: none;
+  }
+
+  .header-list .consultation-btn {
+    display: none;
   }
 }

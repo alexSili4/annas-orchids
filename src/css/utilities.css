@@ -55,6 +55,8 @@ a {
 }
 
 .section {
+  padding-top: 128px;
+  padding-bottom: 128px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -67,18 +69,8 @@ a {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 1279px) {
-  .desc-element {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 1280px) {
   .container {
     width: 1152px;
-  }
-
-  .mobile-element {
-    display: none;
   }
 }
