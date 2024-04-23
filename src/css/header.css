@@ -1,28 +1,20 @@
 .header {
   position: absolute;
-  top: 41px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1256px;
-  padding: 16px 68px;
-  border-radius: 20px;
+  top: 0px;
+  left: 0%;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 10px;
   background-color: rgba(255, 255, 255, 0.9);
-}
-
-@media screen and (min-width: 1280px) {
 }
 
 .container.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
 }
 
 .nav {
-  display: flex;
-  align-items: center;
-  gap: 97.5px;
 }
 
 .header-logo-link {
@@ -30,14 +22,29 @@
 
 .header-logo-icon {
   display: block;
-  width: 105px;
-  height: 47.21px;
+  width: 83px;
+  height: 37.32px;
 }
 
 .menu {
 }
 
 .menu-item {
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-link {
+  color: #000000;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  transition: color var(--transition-duration-and-func);
 }
 
 .menu-link {
@@ -51,12 +58,6 @@
 
 .menu-link:is(:hover, :focus) {
   color: var(--accent-color);
-}
-
-.header-list {
-  display: flex;
-  align-items: center;
-  gap: 32px;
 }
 
 .header-lang-btn {
@@ -86,6 +87,18 @@
   color: var(--white-color);
 }
 
+.consultation-btn {
+  min-width: 181px;
+  border: none;
+  padding: 12px;
+  border-radius: 100px;
+  color: #000000;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
 .header-actions {
 }
 
@@ -104,14 +117,48 @@
   fill: var(--accent-color);
 }
 
-.consultation-btn {
-  min-width: 181px;
+.mobile-menu-toggle {
+  padding: 0;
   border: none;
-  padding: 12px;
-  border-radius: 100px;
-  color: #000000;
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
+  background-color: transparent;
+}
+
+.mobile-menu-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  fill: #000000;
+  transition: fill var(--transition-duration-and-func);
+}
+
+.mobile-menu-toggle:is(:hover, :focus) .mobile-menu-icon {
+  fill: var(--accent-color);
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    top: 41px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1256px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 20px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 97.5px;
+  }
+
+  .header-logo-icon {
+    display: block;
+    width: 105px;
+    height: 47.21px;
+  }
+
+  .header-list {
+    gap: 32px;
+  }
 }

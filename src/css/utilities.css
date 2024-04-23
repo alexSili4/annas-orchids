@@ -46,3 +46,27 @@ a {
 .btn:is(:hover, :focus) {
   background-color: var(--btn-accent-color);
 }
+
+.container {
+  width: 318px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1279px) {
+  .desc-element {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1152px;
+  }
+
+  .mobile-element {
+    display: none;
+  }
+}
