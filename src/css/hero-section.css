@@ -1,4 +1,5 @@
 .hero-section {
+  position: relative;
   width: 320px;
   height: 700px;
   padding-top: 232px;
@@ -6,6 +7,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
     url(/images/hero/bg-img-mobile.jpg);
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-slogan {
@@ -87,9 +89,8 @@
 .support-menu-item {
 }
 
-.support-menu-btn {
-  padding: 0;
-  border: none;
+.support-menu-link {
+  display: inline-block;
 }
 
 .support-menu-icon {
@@ -127,7 +128,8 @@
 
 @media screen and (min-width: 1280px) {
   .hero-section {
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     height: 810px;
     padding-top: 304px;
     background: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),

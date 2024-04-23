@@ -69,8 +69,24 @@ a {
   transform: scale(1.1);
 }
 
+.section-title {
+  color: var(--accent-color);
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 1280px) {
   .container {
     width: 1152px;
+  }
+
+  .section-title {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
   }
 }
