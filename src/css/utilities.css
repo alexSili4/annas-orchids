@@ -1,6 +1,4 @@
 body {
-  overflow: hidden;
-  background: grey;
 }
 
 h1,
@@ -39,6 +37,7 @@ a {
 }
 
 .btn {
+  border-radius: 100px;
   background-color: rgb(255, 184, 1);
   transition: background-color var(--transition-duration-and-func);
 }
@@ -53,6 +52,19 @@ a {
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon-scale {
+  transition: transform var(--transition-duration-and-func);
+}
+
+.icon-scale:is(:hover, :focus) {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1279px) {
