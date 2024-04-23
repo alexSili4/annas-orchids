@@ -31,7 +31,7 @@ a {
   text-decoration: none;
 }
 
-.hidden-title {
+.hidden-element {
   position: fixed;
   transform: scale(0);
 }
