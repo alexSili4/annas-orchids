@@ -36,7 +36,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 16px;
   width: 100%;
 }
 
@@ -200,7 +200,7 @@
   }
 
   .vacancies-list {
-    gap: 16px;
+    gap: 32px;
   }
 
   .vacancies-list-item {
