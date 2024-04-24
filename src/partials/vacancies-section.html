@@ -1,767 +1,720 @@
 <section class="vacancies-section section">
+  <h2 class="section-title">актуальні вакансії</h2>
+  <ul class="seasons-list">
+    <li class="seasons-list-item">
+      <label class="season-wrap">
+        <span class="season-name">Зима</span>
+        <input
+          class="hidden-element"
+          type="radio"
+          name="vacancy-season"
+          value="winter"
+          checked
+        />
+      </label>
+    </li>
+    <li class="seasons-list-item">
+      <label class="season-wrap">
+        <span class="season-name">Весна</span>
+        <input
+          class="hidden-element"
+          type="radio"
+          name="vacancy-season"
+          value="spring"
+        />
+      </label>
+    </li>
+    <li class="seasons-list-item">
+      <label class="season-wrap">
+        <span class="season-name">Літо</span>
+        <input
+          class="hidden-element"
+          type="radio"
+          name="vacancy-season"
+          value="summer"
+        />
+      </label>
+    </li>
+    <li class="seasons-list-item">
+      <label class="season-wrap">
+        <span class="season-name">Осінь</span>
+        <input
+          class="hidden-element"
+          type="radio"
+          name="vacancy-season"
+          value="autumn"
+        />
+      </label>
+    </li>
+  </ul>
   <div class="container">
-    <h2 class="section-title">актуальні вакансії</h2>
-    <div class="vacancies-list-wrap">
-      <ul class="seasons-list">
-        <li class="seasons-list-item">
-          <label class="season-wrap">
-            <span class="season-name">Зима</span>
-            <input
-              class="hidden-element"
-              type="radio"
-              name="vacancy-season"
-              value="winter"
-              checked
-            />
-          </label>
-        </li>
-        <li class="seasons-list-item">
-          <label class="season-wrap">
-            <span class="season-name">Весна</span>
-            <input
-              class="hidden-element"
-              type="radio"
-              name="vacancy-season"
-              value="spring"
-            />
-          </label>
-        </li>
-        <li class="seasons-list-item">
-          <label class="season-wrap">
-            <span class="season-name">Літо</span>
-            <input
-              class="hidden-element"
-              type="radio"
-              name="vacancy-season"
-              value="summer"
-            />
-          </label>
-        </li>
-        <li class="seasons-list-item">
-          <label class="season-wrap">
-            <span class="season-name">Осінь</span>
-            <input
-              class="hidden-element"
-              type="radio"
-              name="vacancy-season"
-              value="autumn"
-            />
-          </label>
-        </li>
-      </ul>
-      <ul class="vacancies-list">
-        <li class="vacancies-list-item is-hidden">
-          <div class="vacancy-card">
-            <div class="vacancy-card-section-wrap">
-              <div class="vacancy-card-img-wrap">
-                <img
-                  src="/images/vacancies/cherries.jpg"
-                  alt="черешні"
-                  class="vacancy-card-img"
-                  height="200"
-                />
-              </div>
-              <h3 class="vacancy-card-title">ЗБИРАЛЬНИК вишень, черешень</h3>
+    <ul class="vacancies-list">
+      <li class="vacancies-list-item is-hidden">
+        <div class="vacancy-card">
+          <div class="vacancy-card-section-wrap">
+            <div class="vacancy-card-img-wrap">
+              <img
+                src="/images/vacancies/cherries.jpg"
+                alt="черешні"
+                class="vacancy-card-img"
+              />
             </div>
-            <div class="vacancy-card-section-wrap">
-              <p class="vacancy-card-desc">
-                Із дбайливістю збираємо найсмачніші фрукти: вишні та черешні
+            <h3 class="vacancy-card-title">ЗБИРАЛЬНИК вишень, черешень</h3>
+          </div>
+          <div class="vacancy-card-section-wrap">
+            <p class="vacancy-card-desc">
+              Із дбайливістю збираємо найсмачніші фрукти: вишні та черешні
+            </p>
+          </div>
+          <button type="button" class="vacancy-card-btn btn">Детальніше</button>
+        </div>
+        <div class="vacancy-card-details">
+          <button type="button" class="vacancy-card-details-close-btn">
+            <svg class="vacancy-card-details-close-icon">
+              <use href="/icons/icons.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="vacancy-card-details-desc">
+            <div class="vacancy-card-details-main-criteria">
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Вік:</span
+                  ><br />18-60 років
+                </p>
+              </li>
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Досвід:</span
+                  ><br />без досвіду
+                </p>
+              </li>
+            </div>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Заробітна плата</span>
+                від 39000 грн
               </p>
-            </div>
-            <button type="button" class="vacancy-card-btn btn">
-              Детальніше
-            </button>
-          </div>
-          <div class="vacancy-card-details">
-            <button type="button" class="vacancy-card-details-close-btn">
-              <svg class="vacancy-card-details-close-icon">
-                <use href="/icons/icons.svg#close"></use>
-              </svg>
-            </button>
-            <ul class="vacancy-card-details-desc">
-              <div class="vacancy-card-details-main-criteria">
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Вік:</span
-                    ><br />18-60 років
-                  </p>
-                </li>
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Досвід:</span
-                    ><br />без досвіду
-                  </p>
-                </li>
-              </div>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title"
-                    >Заробітна плата</span
-                  >
-                  від 39000 грн
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Вимоги:</span>
-                  уважність; уміння швидко працювати; вмотивованість;
-                  відсутність шкідливих звичок
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Умови праці:</span>
-                  робочий день - 8-10 годин; офіційне працевлаштування;
-                  проживання в гуртожитку
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Обов&#39;язки:</span
-                  ><br />- збирання, відбір та пакування фруктів;<br />-
-                  розпізнавання зрілості, вибіркове збирання;<br />-
-                  забезпечення правильного зберігання та транспортування врожаю
-                </p>
-              </li>
-            </ul>
-            <button type="button" class="vacancy-card-btn btn">
-              Приєднатись
-            </button>
-          </div>
-        </li>
-        <li class="vacancies-list-item is-hidden">
-          <div class="vacancy-card">
-            <div class="vacancy-card-section-wrap">
-              <div class="vacancy-card-img-wrap">
-                <img
-                  src="./images/vacancies/plums.jpg"
-                  alt="сливи"
-                  class="vacancy-card-img"
-                  height="200"
-                />
-              </div>
-              <h3 class="vacancy-card-title">ЗБИРАЛЬНИК слив</h3>
-            </div>
-            <div class="vacancy-card-section-wrap">
-              <p class="vacancy-card-desc">
-                Із дбайливістю збираємо найсмачніші фрукти: сливи
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Вимоги:</span>
+                уважність; уміння швидко працювати; вмотивованість; відсутність
+                шкідливих звичок
               </p>
-            </div>
-            <button type="button" class="vacancy-card-btn btn">
-              Детальніше
-            </button>
-          </div>
-          <div class="vacancy-card-details">
-            <button type="button" class="vacancy-card-details-close-btn">
-              <svg class="vacancy-card-details-close-icon">
-                <use href="/icons/icons.svg#close"></use>
-              </svg>
-            </button>
-            <ul class="vacancy-card-details-desc">
-              <div class="vacancy-card-details-main-criteria">
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Вік:</span
-                    ><br />18-60 років
-                  </p>
-                </li>
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Досвід:</span
-                    ><br />без досвіду
-                  </p>
-                </li>
-              </div>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title"
-                    >Заробітна плата</span
-                  >
-                  від 39000 грн
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Вимоги:</span>
-                  уважність; уміння швидко працювати; вмотивованість;
-                  відсутність шкідливих звичок
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Умови праці:</span>
-                  робочий день - 8-10 годин; офіційне працевлаштування;
-                  проживання в гуртожитку
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Обов&#39;язки:</span
-                  ><br />- збирання, відбір та пакування фруктів;<br />-
-                  розпізнавання зрілості, вибіркове збирання;<br />-
-                  забезпечення правильного зберігання та транспортування врожаю
-                </p>
-              </li>
-            </ul>
-            <button type="button" class="vacancy-card-btn btn">
-              Приєднатись
-            </button>
-          </div>
-        </li>
-        <li class="vacancies-list-item is-hidden">
-          <div class="vacancy-card">
-            <div class="vacancy-card-section-wrap">
-              <div class="vacancy-card-img-wrap">
-                <img
-                  src="./images/vacancies/peaches.jpg"
-                  alt="персики"
-                  class="vacancy-card-img"
-                  height="200"
-                />
-              </div>
-              <h3 class="vacancy-card-title">ЗБИРАЛЬНИК персиків, абрикосів</h3>
-            </div>
-            <div class="vacancy-card-section-wrap">
-              <p class="vacancy-card-desc">
-                Із дбайливістю збираємо найсмачніші фрукти: персики та абрикоси
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Умови праці:</span>
+                робочий день - 8-10 годин; офіційне працевлаштування; проживання
+                в гуртожитку
               </p>
-            </div>
-            <button type="button" class="vacancy-card-btn btn">
-              Детальніше
-            </button>
-          </div>
-          <div class="vacancy-card-details">
-            <button type="button" class="vacancy-card-details-close-btn">
-              <svg class="vacancy-card-details-close-icon">
-                <use href="/icons/icons.svg#close"></use>
-              </svg>
-            </button>
-            <ul class="vacancy-card-details-desc">
-              <div class="vacancy-card-details-main-criteria">
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Вік:</span
-                    ><br />18-60 років
-                  </p>
-                </li>
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Досвід:</span
-                    ><br />без досвіду
-                  </p>
-                </li>
-              </div>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title"
-                    >Заробітна плата</span
-                  >
-                  від 39000 грн
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Вимоги:</span>
-                  уважність; уміння швидко працювати; вмотивованість;
-                  відсутність шкідливих звичок
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Умови праці:</span>
-                  робочий день - 8-10 годин; офіційне працевлаштування;
-                  проживання в гуртожитку
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Обов&#39;язки:</span
-                  ><br />- збирання, відбір та пакування фруктів;<br />-
-                  розпізнавання зрілості, вибіркове збирання;<br />-
-                  забезпечення правильного зберігання та транспортування врожаю
-                </p>
-              </li>
-            </ul>
-            <button type="button" class="vacancy-card-btn btn">
-              Приєднатись
-            </button>
-          </div>
-        </li>
-        <li class="vacancies-list-item is-hidden">
-          <div class="vacancy-card">
-            <div class="vacancy-card-section-wrap">
-              <div class="vacancy-card-img-wrap">
-                <img
-                  src="./images/vacancies/pears.jpg"
-                  alt="груші"
-                  class="vacancy-card-img"
-                  height="200"
-                />
-              </div>
-              <h3 class="vacancy-card-title">ЗБИРАЛЬНИК груш</h3>
-            </div>
-            <div class="vacancy-card-section-wrap">
-              <p class="vacancy-card-desc">
-                Із дбайливістю збираємо найсмачніші фрукти: груші
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Обов&#39;язки:</span
+                ><br />- збирання, відбір та пакування фруктів;<br />-
+                розпізнавання зрілості, вибіркове збирання;<br />- забезпечення
+                правильного зберігання та транспортування врожаю
               </p>
+            </li>
+          </ul>
+          <button type="button" class="vacancy-card-btn btn">
+            Приєднатись
+          </button>
+        </div>
+      </li>
+      <li class="vacancies-list-item is-hidden">
+        <div class="vacancy-card">
+          <div class="vacancy-card-section-wrap">
+            <div class="vacancy-card-img-wrap">
+              <img
+                src="./images/vacancies/plums.jpg"
+                alt="сливи"
+                class="vacancy-card-img"
+              />
             </div>
-            <button type="button" class="vacancy-card-btn btn">
-              Детальніше
-            </button>
+            <h3 class="vacancy-card-title">ЗБИРАЛЬНИК слив</h3>
           </div>
-          <div class="vacancy-card-details">
-            <button type="button" class="vacancy-card-details-close-btn">
-              <svg class="vacancy-card-details-close-icon">
-                <use href="/icons/icons.svg#close"></use>
-              </svg>
-            </button>
-            <ul class="vacancy-card-details-desc">
-              <div class="vacancy-card-details-main-criteria">
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Вік:</span
-                    ><br />18-60 років
-                  </p>
-                </li>
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Досвід:</span
-                    ><br />без досвіду
-                  </p>
-                </li>
-              </div>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title"
-                    >Заробітна плата</span
-                  >
-                  від 39000 грн
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Вимоги:</span>
-                  уважність; уміння швидко працювати; вмотивованість;
-                  відсутність шкідливих звичок
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Умови праці:</span>
-                  робочий день - 8-10 годин; офіційне працевлаштування;
-                  проживання в гуртожитку
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Обов&#39;язки:</span
-                  ><br />- збирання, відбір та пакування фруктів;<br />-
-                  розпізнавання зрілості, вибіркове збирання;<br />-
-                  забезпечення правильного зберігання та транспортування врожаю
-                </p>
-              </li>
-            </ul>
-            <button type="button" class="vacancy-card-btn btn">
-              Приєднатись
-            </button>
+          <div class="vacancy-card-section-wrap">
+            <p class="vacancy-card-desc">
+              Із дбайливістю збираємо найсмачніші фрукти: сливи
+            </p>
           </div>
-        </li>
-        <li class="vacancies-list-item is-hidden">
-          <div class="vacancy-card">
-            <div class="vacancy-card-section-wrap">
-              <div class="vacancy-card-img-wrap">
-                <img
-                  src="./images/vacancies/apples.jpg"
-                  alt="яблука"
-                  class="vacancy-card-img"
-                  height="200"
-                />
-              </div>
-              <h3 class="vacancy-card-title">ЗБИРАЛЬНИК яблук</h3>
+          <button type="button" class="vacancy-card-btn btn">Детальніше</button>
+        </div>
+        <div class="vacancy-card-details">
+          <button type="button" class="vacancy-card-details-close-btn">
+            <svg class="vacancy-card-details-close-icon">
+              <use href="/icons/icons.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="vacancy-card-details-desc">
+            <div class="vacancy-card-details-main-criteria">
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Вік:</span
+                  ><br />18-60 років
+                </p>
+              </li>
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Досвід:</span
+                  ><br />без досвіду
+                </p>
+              </li>
             </div>
-            <div class="vacancy-card-section-wrap">
-              <p class="vacancy-card-desc">
-                Із дбайливістю збираємо найсмачніші фрукти: яблука
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Заробітна плата</span>
+                від 39000 грн
               </p>
-            </div>
-            <button type="button" class="vacancy-card-btn btn">
-              Детальніше
-            </button>
-          </div>
-          <div class="vacancy-card-details">
-            <button type="button" class="vacancy-card-details-close-btn">
-              <svg class="vacancy-card-details-close-icon">
-                <use href="/icons/icons.svg#close"></use>
-              </svg>
-            </button>
-            <ul class="vacancy-card-details-desc">
-              <div class="vacancy-card-details-main-criteria">
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Вік:</span
-                    ><br />18-60 років
-                  </p>
-                </li>
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Досвід:</span
-                    ><br />без досвіду
-                  </p>
-                </li>
-              </div>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title"
-                    >Заробітна плата</span
-                  >
-                  від 39000 грн
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Вимоги:</span>
-                  уважність; уміння швидко працювати; вмотивованість;
-                  відсутність шкідливих звичок
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Умови праці:</span>
-                  робочий день - 8-10 годин; офіційне працевлаштування;
-                  проживання в гуртожитку
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Обов&#39;язки:</span
-                  ><br />- збирання, відбір та пакування фруктів;<br />-
-                  розпізнавання зрілості, вибіркове збирання;<br />-
-                  забезпечення правильного зберігання та транспортування врожаю
-                </p>
-              </li>
-            </ul>
-            <button type="button" class="vacancy-card-btn btn">
-              Приєднатись
-            </button>
-          </div>
-        </li>
-        <li class="vacancies-list-item is-hidden">
-          <div class="vacancy-card">
-            <div class="vacancy-card-section-wrap">
-              <div class="vacancy-card-img-wrap">
-                <img
-                  src="./images/vacancies/grape.jpg"
-                  alt="виноград"
-                  class="vacancy-card-img"
-                  height="200"
-                />
-              </div>
-              <h3 class="vacancy-card-title">ЗБИРАЛЬНИК винограду</h3>
-            </div>
-            <div class="vacancy-card-section-wrap">
-              <p class="vacancy-card-desc">
-                Із дбайливістю збираємо найсмачніші фрукти: виноград
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Вимоги:</span>
+                уважність; уміння швидко працювати; вмотивованість; відсутність
+                шкідливих звичок
               </p>
-            </div>
-            <button type="button" class="vacancy-card-btn btn">
-              Детальніше
-            </button>
-          </div>
-          <div class="vacancy-card-details">
-            <button type="button" class="vacancy-card-details-close-btn">
-              <svg class="vacancy-card-details-close-icon">
-                <use href="/icons/icons.svg#close"></use>
-              </svg>
-            </button>
-            <ul class="vacancy-card-details-desc">
-              <div class="vacancy-card-details-main-criteria">
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Вік:</span
-                    ><br />18-60 років
-                  </p>
-                </li>
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Досвід:</span
-                    ><br />без досвіду
-                  </p>
-                </li>
-              </div>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title"
-                    >Заробітна плата</span
-                  >
-                  від 39000 грн
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Вимоги:</span>
-                  уважність; уміння швидко працювати; вмотивованість;
-                  відсутність шкідливих звичок
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Умови праці:</span>
-                  робочий день - 8-10 годин; офіційне працевлаштування;
-                  проживання в гуртожитку
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Обов&#39;язки:</span
-                  ><br />- збирання, відбір та пакування фруктів;<br />-
-                  розпізнавання зрілості, вибіркове збирання;<br />-
-                  забезпечення правильного зберігання та транспортування врожаю
-                </p>
-              </li>
-            </ul>
-            <button type="button" class="vacancy-card-btn btn">
-              Приєднатись
-            </button>
-          </div>
-        </li>
-        <li class="vacancies-list-item is-hidden">
-          <div class="vacancy-card">
-            <div class="vacancy-card-section-wrap">
-              <div class="vacancy-card-img-wrap">
-                <img
-                  src="./images/vacancies/tractor.jpg"
-                  alt="трактор"
-                  class="vacancy-card-img"
-                  height="200"
-                />
-              </div>
-              <h3 class="vacancy-card-title">ТРАКТОРИСТ</h3>
-            </div>
-            <div class="vacancy-card-section-wrap">
-              <p class="vacancy-card-desc">
-                Забезпечуємо ефективну роботу та готуємо поля до посіву
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Умови праці:</span>
+                робочий день - 8-10 годин; офіційне працевлаштування; проживання
+                в гуртожитку
               </p>
-            </div>
-            <button type="button" class="vacancy-card-btn btn">
-              Детальніше
-            </button>
-          </div>
-          <div class="vacancy-card-details">
-            <button type="button" class="vacancy-card-details-close-btn">
-              <svg class="vacancy-card-details-close-icon">
-                <use href="/icons/icons.svg#close"></use>
-              </svg>
-            </button>
-            <ul class="vacancy-card-details-desc">
-              <div class="vacancy-card-details-main-criteria">
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Вік:</span
-                    ><br />18-60 років
-                  </p>
-                </li>
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Досвід:</span
-                    ><br />1 рік
-                  </p>
-                </li>
-              </div>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title"
-                    >Заробітна плата</span
-                  >
-                  від 39000 грн
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Вимоги:</span>
-                  права на трактори А1, А2 (інші категорії вітаються; навички
-                  механіка вітаються); охайне ставлення до техніки
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Умови праці:</span>
-                  повна зайнятість; робочий день з 7:00 до 17:00, пн-сб;
-                  офіційне працевлаштування; проживання в гуртожитку
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Обов&#39;язки:</span
-                  ><br />- полив плодових садів;<br />- оприскування плодових
-                  садів від шкідників;<br />- транспортування плодів
-                </p>
-              </li>
-            </ul>
-            <button type="button" class="vacancy-card-btn btn">
-              Приєднатись
-            </button>
-          </div>
-        </li>
-        <li class="vacancies-list-item is-hidden">
-          <div class="vacancy-card">
-            <div class="vacancy-card-section-wrap">
-              <div class="vacancy-card-img-wrap">
-                <img
-                  src="./images/vacancies/loader.jpg"
-                  alt="навантажувач"
-                  class="vacancy-card-img"
-                  height="200"
-                />
-              </div>
-              <h3 class="vacancy-card-title">ВОДІЙ НАВАНТАЖУВАЧА</h3>
-            </div>
-            <div class="vacancy-card-section-wrap">
-              <p class="vacancy-card-desc">
-                Перевозимо та транспортуємо матеріали й продукцію дбайливо
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Обов&#39;язки:</span
+                ><br />- збирання, відбір та пакування фруктів;<br />-
+                розпізнавання зрілості, вибіркове збирання;<br />- забезпечення
+                правильного зберігання та транспортування врожаю
               </p>
+            </li>
+          </ul>
+          <button type="button" class="vacancy-card-btn btn">
+            Приєднатись
+          </button>
+        </div>
+      </li>
+      <li class="vacancies-list-item is-hidden">
+        <div class="vacancy-card">
+          <div class="vacancy-card-section-wrap">
+            <div class="vacancy-card-img-wrap">
+              <img
+                src="./images/vacancies/peaches.jpg"
+                alt="персики"
+                class="vacancy-card-img"
+              />
             </div>
-            <button type="button" class="vacancy-card-btn btn">
-              Детальніше
-            </button>
+            <h3 class="vacancy-card-title">ЗБИРАЛЬНИК персиків, абрикосів</h3>
           </div>
-          <div class="vacancy-card-details">
-            <button type="button" class="vacancy-card-details-close-btn">
-              <svg class="vacancy-card-details-close-icon">
-                <use href="/icons/icons.svg#close"></use>
-              </svg>
-            </button>
-            <ul class="vacancy-card-details-desc">
-              <div class="vacancy-card-details-main-criteria">
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Вік:</span
-                    ><br />18-60 років
-                  </p>
-                </li>
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Досвід:</span
-                    ><br />1 рік
-                  </p>
-                </li>
-              </div>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title"
-                    >Заробітна плата</span
-                  >
-                  від 39000 грн
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Вимоги:</span>
-                  водійські права категорії С; навички механіка вітаються;
-                  охайне ставлення до техніки
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Умови праці:</span>
-                  повна зайнятість; робочий день з 7:00 до 17:00, пн-сб;
-                  офіційне працевлаштування; проживання в гуртожитку
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Обов&#39;язки:</span
-                  ><br />- транспортування плодів;<br />- завантаження та
-                  розвантаження фруктів;<br />- переміщення вантажу на
-                  виробничому майданчику або складі
-                </p>
-              </li>
-            </ul>
-            <button type="button" class="vacancy-card-btn btn">
-              Приєднатись
-            </button>
+          <div class="vacancy-card-section-wrap">
+            <p class="vacancy-card-desc">
+              Із дбайливістю збираємо найсмачніші фрукти: персики та абрикоси
+            </p>
           </div>
-        </li>
-        <li class="vacancies-list-item is-hidden">
-          <div class="vacancy-card">
-            <div class="vacancy-card-section-wrap">
-              <div class="vacancy-card-img-wrap">
-                <img
-                  src="./images/vacancies/beekeeper.jpg"
-                  alt="пасічник"
-                  class="vacancy-card-img"
-                  height="200"
-                />
-              </div>
-              <h3 class="vacancy-card-title">ПАСІЧНИК</h3>
+          <button type="button" class="vacancy-card-btn btn">Детальніше</button>
+        </div>
+        <div class="vacancy-card-details">
+          <button type="button" class="vacancy-card-details-close-btn">
+            <svg class="vacancy-card-details-close-icon">
+              <use href="/icons/icons.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="vacancy-card-details-desc">
+            <div class="vacancy-card-details-main-criteria">
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Вік:</span
+                  ><br />18-60 років
+                </p>
+              </li>
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Досвід:</span
+                  ><br />без досвіду
+                </p>
+              </li>
             </div>
-            <div class="vacancy-card-section-wrap">
-              <p class="vacancy-card-desc">
-                Дбаємо про бджіл, щоб виробляти найкращий мед
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Заробітна плата</span>
+                від 39000 грн
               </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Вимоги:</span>
+                уважність; уміння швидко працювати; вмотивованість; відсутність
+                шкідливих звичок
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Умови праці:</span>
+                робочий день - 8-10 годин; офіційне працевлаштування; проживання
+                в гуртожитку
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Обов&#39;язки:</span
+                ><br />- збирання, відбір та пакування фруктів;<br />-
+                розпізнавання зрілості, вибіркове збирання;<br />- забезпечення
+                правильного зберігання та транспортування врожаю
+              </p>
+            </li>
+          </ul>
+          <button type="button" class="vacancy-card-btn btn">
+            Приєднатись
+          </button>
+        </div>
+      </li>
+      <li class="vacancies-list-item is-hidden">
+        <div class="vacancy-card">
+          <div class="vacancy-card-section-wrap">
+            <div class="vacancy-card-img-wrap">
+              <img
+                src="./images/vacancies/pears.jpg"
+                alt="груші"
+                class="vacancy-card-img"
+              />
             </div>
-            <button type="button" class="vacancy-card-btn btn">
-              Детальніше
-            </button>
+            <h3 class="vacancy-card-title">ЗБИРАЛЬНИК груш</h3>
           </div>
-          <div class="vacancy-card-details">
-            <button type="button" class="vacancy-card-details-close-btn">
-              <svg class="vacancy-card-details-close-icon">
-                <use href="/icons/icons.svg#close"></use>
-              </svg>
-            </button>
-            <ul class="vacancy-card-details-desc">
-              <div class="vacancy-card-details-main-criteria">
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Вік:</span
-                    ><br />18-60 років
-                  </p>
-                </li>
-                <li>
-                  <p class="vacancy-card-details-text">
-                    <span class="vacancy-card-details-title">Досвід:</span
-                    ><br />1 рік
-                  </p>
-                </li>
-              </div>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title"
-                    >Заробітна плата</span
-                  >
-                  від 39000 грн
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Вимоги:</span>
-                  відсутність алергії на укуси бджіл; уважність; старанність у
-                  виконанні завдань; вміння працювати в команді; працьовитість
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Умови праці:</span>
-                  повна зайнятість; робочий день з 7:00 до 17:00; офіційне
-                  працевлаштування; проживання в гуртожитку
-                </p>
-              </li>
-              <li>
-                <p class="vacancy-card-details-text">
-                  <span class="vacancy-card-details-title">Обов&#39;язки:</span>
-                  - перевезення бджіл на медозбір;<br />- викачування меду та
-                  виведення/заміна матки переробка воскової сировини;<br />-
-                  ремонт та догляд за рамками вуликів та підготовка пасіки до
-                  зимового періоду
-                </p>
-              </li>
-            </ul>
-            <button type="button" class="vacancy-card-btn btn">
-              Приєднатись
-            </button>
+          <div class="vacancy-card-section-wrap">
+            <p class="vacancy-card-desc">
+              Із дбайливістю збираємо найсмачніші фрукти: груші
+            </p>
           </div>
-        </li>
-      </ul>
-    </div>
+          <button type="button" class="vacancy-card-btn btn">Детальніше</button>
+        </div>
+        <div class="vacancy-card-details">
+          <button type="button" class="vacancy-card-details-close-btn">
+            <svg class="vacancy-card-details-close-icon">
+              <use href="/icons/icons.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="vacancy-card-details-desc">
+            <div class="vacancy-card-details-main-criteria">
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Вік:</span
+                  ><br />18-60 років
+                </p>
+              </li>
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Досвід:</span
+                  ><br />без досвіду
+                </p>
+              </li>
+            </div>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Заробітна плата</span>
+                від 39000 грн
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Вимоги:</span>
+                уважність; уміння швидко працювати; вмотивованість; відсутність
+                шкідливих звичок
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Умови праці:</span>
+                робочий день - 8-10 годин; офіційне працевлаштування; проживання
+                в гуртожитку
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Обов&#39;язки:</span
+                ><br />- збирання, відбір та пакування фруктів;<br />-
+                розпізнавання зрілості, вибіркове збирання;<br />- забезпечення
+                правильного зберігання та транспортування врожаю
+              </p>
+            </li>
+          </ul>
+          <button type="button" class="vacancy-card-btn btn">
+            Приєднатись
+          </button>
+        </div>
+      </li>
+      <li class="vacancies-list-item is-hidden">
+        <div class="vacancy-card">
+          <div class="vacancy-card-section-wrap">
+            <div class="vacancy-card-img-wrap">
+              <img
+                src="./images/vacancies/apples.jpg"
+                alt="яблука"
+                class="vacancy-card-img"
+              />
+            </div>
+            <h3 class="vacancy-card-title">ЗБИРАЛЬНИК яблук</h3>
+          </div>
+          <div class="vacancy-card-section-wrap">
+            <p class="vacancy-card-desc">
+              Із дбайливістю збираємо найсмачніші фрукти: яблука
+            </p>
+          </div>
+          <button type="button" class="vacancy-card-btn btn">Детальніше</button>
+        </div>
+        <div class="vacancy-card-details">
+          <button type="button" class="vacancy-card-details-close-btn">
+            <svg class="vacancy-card-details-close-icon">
+              <use href="/icons/icons.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="vacancy-card-details-desc">
+            <div class="vacancy-card-details-main-criteria">
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Вік:</span
+                  ><br />18-60 років
+                </p>
+              </li>
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Досвід:</span
+                  ><br />без досвіду
+                </p>
+              </li>
+            </div>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Заробітна плата</span>
+                від 39000 грн
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Вимоги:</span>
+                уважність; уміння швидко працювати; вмотивованість; відсутність
+                шкідливих звичок
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Умови праці:</span>
+                робочий день - 8-10 годин; офіційне працевлаштування; проживання
+                в гуртожитку
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Обов&#39;язки:</span
+                ><br />- збирання, відбір та пакування фруктів;<br />-
+                розпізнавання зрілості, вибіркове збирання;<br />- забезпечення
+                правильного зберігання та транспортування врожаю
+              </p>
+            </li>
+          </ul>
+          <button type="button" class="vacancy-card-btn btn">
+            Приєднатись
+          </button>
+        </div>
+      </li>
+      <li class="vacancies-list-item is-hidden">
+        <div class="vacancy-card">
+          <div class="vacancy-card-section-wrap">
+            <div class="vacancy-card-img-wrap">
+              <img
+                src="./images/vacancies/grape.jpg"
+                alt="виноград"
+                class="vacancy-card-img"
+              />
+            </div>
+            <h3 class="vacancy-card-title">ЗБИРАЛЬНИК винограду</h3>
+          </div>
+          <div class="vacancy-card-section-wrap">
+            <p class="vacancy-card-desc">
+              Із дбайливістю збираємо найсмачніші фрукти: виноград
+            </p>
+          </div>
+          <button type="button" class="vacancy-card-btn btn">Детальніше</button>
+        </div>
+        <div class="vacancy-card-details">
+          <button type="button" class="vacancy-card-details-close-btn">
+            <svg class="vacancy-card-details-close-icon">
+              <use href="/icons/icons.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="vacancy-card-details-desc">
+            <div class="vacancy-card-details-main-criteria">
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Вік:</span
+                  ><br />18-60 років
+                </p>
+              </li>
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Досвід:</span
+                  ><br />без досвіду
+                </p>
+              </li>
+            </div>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Заробітна плата</span>
+                від 39000 грн
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Вимоги:</span>
+                уважність; уміння швидко працювати; вмотивованість; відсутність
+                шкідливих звичок
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Умови праці:</span>
+                робочий день - 8-10 годин; офіційне працевлаштування; проживання
+                в гуртожитку
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Обов&#39;язки:</span
+                ><br />- збирання, відбір та пакування фруктів;<br />-
+                розпізнавання зрілості, вибіркове збирання;<br />- забезпечення
+                правильного зберігання та транспортування врожаю
+              </p>
+            </li>
+          </ul>
+          <button type="button" class="vacancy-card-btn btn">
+            Приєднатись
+          </button>
+        </div>
+      </li>
+      <li class="vacancies-list-item is-hidden">
+        <div class="vacancy-card">
+          <div class="vacancy-card-section-wrap">
+            <div class="vacancy-card-img-wrap">
+              <img
+                src="./images/vacancies/tractor.jpg"
+                alt="трактор"
+                class="vacancy-card-img"
+              />
+            </div>
+            <h3 class="vacancy-card-title">ТРАКТОРИСТ</h3>
+          </div>
+          <div class="vacancy-card-section-wrap">
+            <p class="vacancy-card-desc">
+              Забезпечуємо ефективну роботу та готуємо поля до посіву
+            </p>
+          </div>
+          <button type="button" class="vacancy-card-btn btn">Детальніше</button>
+        </div>
+        <div class="vacancy-card-details">
+          <button type="button" class="vacancy-card-details-close-btn">
+            <svg class="vacancy-card-details-close-icon">
+              <use href="/icons/icons.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="vacancy-card-details-desc">
+            <div class="vacancy-card-details-main-criteria">
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Вік:</span
+                  ><br />18-60 років
+                </p>
+              </li>
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Досвід:</span><br />1
+                  рік
+                </p>
+              </li>
+            </div>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Заробітна плата</span>
+                від 39000 грн
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Вимоги:</span>
+                права на трактори А1, А2 (інші категорії вітаються; навички
+                механіка вітаються); охайне ставлення до техніки
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Умови праці:</span>
+                повна зайнятість; робочий день з 7:00 до 17:00, пн-сб; офіційне
+                працевлаштування; проживання в гуртожитку
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Обов&#39;язки:</span
+                ><br />- полив плодових садів;<br />- оприскування плодових
+                садів від шкідників;<br />- транспортування плодів
+              </p>
+            </li>
+          </ul>
+          <button type="button" class="vacancy-card-btn btn">
+            Приєднатись
+          </button>
+        </div>
+      </li>
+      <li class="vacancies-list-item is-hidden">
+        <div class="vacancy-card">
+          <div class="vacancy-card-section-wrap">
+            <div class="vacancy-card-img-wrap">
+              <img
+                src="./images/vacancies/loader.jpg"
+                alt="навантажувач"
+                class="vacancy-card-img"
+              />
+            </div>
+            <h3 class="vacancy-card-title">ВОДІЙ НАВАНТАЖУВАЧА</h3>
+          </div>
+          <div class="vacancy-card-section-wrap">
+            <p class="vacancy-card-desc">
+              Перевозимо та транспортуємо матеріали й продукцію дбайливо
+            </p>
+          </div>
+          <button type="button" class="vacancy-card-btn btn">Детальніше</button>
+        </div>
+        <div class="vacancy-card-details">
+          <button type="button" class="vacancy-card-details-close-btn">
+            <svg class="vacancy-card-details-close-icon">
+              <use href="/icons/icons.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="vacancy-card-details-desc">
+            <div class="vacancy-card-details-main-criteria">
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Вік:</span
+                  ><br />18-60 років
+                </p>
+              </li>
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Досвід:</span><br />1
+                  рік
+                </p>
+              </li>
+            </div>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Заробітна плата</span>
+                від 39000 грн
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Вимоги:</span>
+                водійські права категорії С; навички механіка вітаються; охайне
+                ставлення до техніки
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Умови праці:</span>
+                повна зайнятість; робочий день з 7:00 до 17:00, пн-сб; офіційне
+                працевлаштування; проживання в гуртожитку
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Обов&#39;язки:</span
+                ><br />- транспортування плодів;<br />- завантаження та
+                розвантаження фруктів;<br />- переміщення вантажу на виробничому
+                майданчику або складі
+              </p>
+            </li>
+          </ul>
+          <button type="button" class="vacancy-card-btn btn">
+            Приєднатись
+          </button>
+        </div>
+      </li>
+      <li class="vacancies-list-item is-hidden">
+        <div class="vacancy-card">
+          <div class="vacancy-card-section-wrap">
+            <div class="vacancy-card-img-wrap">
+              <img
+                src="./images/vacancies/beekeeper.jpg"
+                alt="пасічник"
+                class="vacancy-card-img"
+              />
+            </div>
+            <h3 class="vacancy-card-title">ПАСІЧНИК</h3>
+          </div>
+          <div class="vacancy-card-section-wrap">
+            <p class="vacancy-card-desc">
+              Дбаємо про бджіл, щоб виробляти найкращий мед
+            </p>
+          </div>
+          <button type="button" class="vacancy-card-btn btn">Детальніше</button>
+        </div>
+        <div class="vacancy-card-details">
+          <button type="button" class="vacancy-card-details-close-btn">
+            <svg class="vacancy-card-details-close-icon">
+              <use href="/icons/icons.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="vacancy-card-details-desc">
+            <div class="vacancy-card-details-main-criteria">
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Вік:</span
+                  ><br />18-60 років
+                </p>
+              </li>
+              <li>
+                <p class="vacancy-card-details-text">
+                  <span class="vacancy-card-details-title">Досвід:</span><br />1
+                  рік
+                </p>
+              </li>
+            </div>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Заробітна плата</span>
+                від 39000 грн
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Вимоги:</span>
+                відсутність алергії на укуси бджіл; уважність; старанність у
+                виконанні завдань; вміння працювати в команді; працьовитість
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Умови праці:</span>
+                повна зайнятість; робочий день з 7:00 до 17:00; офіційне
+                працевлаштування; проживання в гуртожитку
+              </p>
+            </li>
+            <li>
+              <p class="vacancy-card-details-text">
+                <span class="vacancy-card-details-title">Обов&#39;язки:</span>
+                - перевезення бджіл на медозбір;<br />- викачування меду та
+                виведення/заміна матки переробка воскової сировини;<br />-
+                ремонт та догляд за рамками вуликів та підготовка пасіки до
+                зимового періоду
+              </p>
+            </li>
+          </ul>
+          <button type="button" class="vacancy-card-btn btn">
+            Приєднатись
+          </button>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>

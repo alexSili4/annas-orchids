@@ -1,43 +1,34 @@
-.vacancies-list-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 64px;
-  margin-top: 64px;
-}
-
 .seasons-list {
   display: flex;
+  width: 100%;
   align-items: center;
-  /* gap: 64px; */
-  border-radius: 100px;
-  background-color: #f0f0f0;
-}
-
-.seasons-list-item {
+  margin: 16px 0 32px;
 }
 
 .season-wrap {
   display: inline-block;
-  min-width: 181px;
-  padding: 12px;
+  width: 100%;
+  padding: 16px 12px 12px;
   text-align: center;
   cursor: pointer;
   transition: border-radius var(--transition-duration-and-func),
     background-color var(--transition-duration-and-func);
 }
 
-.season-wrap:is(:hover, :focus, :has(:checked)) {
-  border-radius: 100px;
-  background-color: #ffb801;
+.seasons-list-item {
+  position: relative;
+  width: calc((100% - 0px) / 3);
 }
 
 .season-name {
   color: #000000;
   font-family: Inter;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
+  letter-spacing: 0.25px;
+  text-align: center;
+  transition: color var(--transition-duration-and-func);
 }
 
 .vacancies-list {
@@ -51,9 +42,7 @@
 
 .vacancies-list-item {
   position: relative;
-  width: calc((100% - 64px) / 3);
-  align-self: stretch;
-  border-radius: 20px;
+  border-radius: 16px;
   overflow: hidden;
 }
 
@@ -61,32 +50,33 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 16px;
+  gap: 8px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.06);
-  padding: 16px;
+  padding: 8px;
 }
 
 .vacancy-card-section-wrap {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
 .vacancy-card-img-wrap {
-  border-radius: 20px;
+  border-radius: 16px;
   overflow: hidden;
 }
 
 .vacancy-card-img {
   width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
 .vacancy-card-title {
   color: #000000;
   font-family: Inter;
-  font-size: 27px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1.1;
   text-transform: uppercase;
@@ -95,17 +85,17 @@
 .vacancy-card-desc {
   color: rgba(0, 0, 0, 0.8);
   font-family: Inter;
-  font-size: 16px;
+  font-size: 13.09px;
   font-weight: 400;
   line-height: 1.5;
 }
 
 .vacancy-card-btn {
-  padding: 12px;
+  padding: 10px;
   border: none;
   color: #000000;
   font-family: Inter;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
 }
@@ -117,11 +107,11 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 35px;
+  gap: 4px;
   width: 100%;
   height: 100%;
   background-color: #ffffff;
-  padding: 16px;
+  padding: 14px;
   transition: opacity var(--transition-duration-and-func),
     visibility var(--transition-duration-and-func);
 }
@@ -138,7 +128,7 @@
 
 .vacancy-card-details-close-btn {
   position: absolute;
-  top: 8.5px;
+  top: 8px;
   right: 8px;
   border: none;
   padding: 0;
@@ -147,8 +137,8 @@
 
 .vacancy-card-details-close-icon {
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 20px;
+  height: 20px;
   fill: #000000;
   transition: fill var(--transition-duration-and-func);
 }
@@ -161,7 +151,7 @@
 .vacancy-card-details-desc {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .vacancy-card-details-main-criteria {
@@ -169,10 +159,15 @@
   gap: 94px;
 }
 
+.vacancy-card-details-main-criteria {
+  display: flex;
+  gap: 24px;
+}
+
 .vacancy-card-details-text {
   color: #000000;
   font-family: Inter;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -180,4 +175,112 @@
 .vacancy-card-details-title {
   color: var(--accent-color);
   font-weight: 700;
+}
+
+@media screen and (min-width: 1280px) {
+  .seasons-list {
+    width: 724px;
+    border-radius: 100px;
+    background-color: #f0f0f0;
+    margin: 64px auto;
+  }
+
+  .season-wrap {
+    padding: 12px;
+  }
+
+  .season-wrap:is(:hover, :focus, :has(:checked)) {
+    border-radius: 100px;
+    background-color: #ffb801;
+  }
+
+  .season-name {
+    font-size: 16px;
+    letter-spacing: 0px;
+  }
+
+  .vacancies-list {
+    gap: 16px;
+  }
+
+  .vacancies-list-item {
+    width: calc((100% - 64px) / 3);
+    align-self: stretch;
+    border-radius: 20px;
+  }
+
+  .vacancy-card {
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .vacancy-card-section-wrap {
+    gap: 16px;
+  }
+
+  .vacancy-card-img-wrap {
+    border-radius: 20px;
+  }
+
+  .vacancy-card-title {
+    font-size: 27px;
+  }
+
+  .vacancy-card-desc {
+    font-size: 16px;
+  }
+
+  .vacancy-card-btn {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .vacancy-card-details {
+    gap: 35px;
+    padding: 16px;
+    transition: opacity var(--transition-duration-and-func),
+      visibility var(--transition-duration-and-func);
+  }
+
+  .vacancy-card-details-close-btn {
+    top: 8.5px;
+  }
+
+  .vacancy-card-details-close-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .vacancy-card-details-desc {
+    gap: 8px;
+  }
+
+  .vacancy-card-details-main-criteria {
+    gap: 94px;
+  }
+
+  .vacancy-card-details-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .season-wrap::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color var(--transition-duration-and-func);
+  }
+
+  .season-wrap:is(:hover, :focus, :has(:checked)) .season-name {
+    color: var(--accent-color);
+  }
+
+  .season-wrap:is(:hover, :focus, :has(:checked))::after {
+    background-color: var(--accent-color);
+  }
 }
