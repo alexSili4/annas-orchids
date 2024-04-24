@@ -9,7 +9,7 @@
 .seasons-list {
   display: flex;
   align-items: center;
-  gap: 64px;
+  /* gap: 64px; */
   border-radius: 100px;
   background-color: #f0f0f0;
 }
@@ -27,7 +27,7 @@
     background-color var(--transition-duration-and-func);
 }
 
-.season-wrap:is(:hover, :focus) {
+.season-wrap:is(:hover, :focus, :has(:checked)) {
   border-radius: 100px;
   background-color: #ffb801;
 }
@@ -50,8 +50,11 @@
 }
 
 .vacancies-list-item {
+  position: relative;
   width: calc((100% - 64px) / 3);
   align-self: stretch;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .vacancy-card {
@@ -60,7 +63,6 @@
   justify-content: space-between;
   gap: 16px;
   height: 100%;
-  border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.06);
   padding: 16px;
 }
@@ -98,7 +100,7 @@
   line-height: 1.5;
 }
 
-.vacancy-card-show-more {
+.vacancy-card-btn {
   padding: 12px;
   border: none;
   color: #000000;
@@ -106,4 +108,76 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+}
+
+.vacancy-card-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 35px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 16px;
+  transition: opacity var(--transition-duration-and-func),
+    visibility var(--transition-duration-and-func);
+}
+
+.vacancies-list-item.is-hidden .vacancy-card-details {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.vacancies-list-item:not(.is-hidden) {
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.vacancy-card-details-close-btn {
+  position: absolute;
+  top: 8.5px;
+  right: 8px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.vacancy-card-details-close-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  fill: #000000;
+  transition: fill var(--transition-duration-and-func);
+}
+
+.vacancy-card-details-close-btn:is(:hover, :focus)
+  .vacancy-card-details-close-icon {
+  fill: var(--accent-color);
+}
+
+.vacancy-card-details-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vacancy-card-details-main-criteria {
+  display: flex;
+  gap: 94px;
+}
+
+.vacancy-card-details-text {
+  color: #000000;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.vacancy-card-details-title {
+  color: var(--accent-color);
+  font-weight: 700;
 }
