@@ -1,31 +1,31 @@
 .join-section {
   width: 100%;
-  background: url(/images/join/bg-img-desk.jpg);
+  background: url(/images/join/bg-img-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .join-section-wrap {
-  width: 742px;
+  width: 288px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.9);
   margin-left: auto;
   margin-right: auto;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .join-section .section-title {
-  font-size: 48px;
-  line-height: 1.1;
+  font-size: 26px;
+  line-height: 1;
 }
 
 .join-section-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 412px;
-  margin-top: 13px;
+  width: 248px;
+  margin-top: 16px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -60,10 +60,10 @@
 }
 
 .join-communication-radio-btn-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
+  display: inline-flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 4px;
   margin-top: 16px;
 }
 
@@ -97,7 +97,7 @@
   align-items: center;
   width: 16.58px;
   height: 16.58px;
-  border: 1px solid;
+  border: 0.77px solid;
   border-color: #aeaeb2;
   border-radius: 50%;
   transition: border-color var(--transition-duration-and-func);
@@ -124,7 +124,7 @@
 }
 
 .join-communication-radio-btn:checked ~ .join-communication-radio-btn-title {
-  color: #264232;
+  color: #272b33;
 }
 
 .join-section-form-submit-btn {
@@ -138,4 +138,42 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+}
+
+@media screen and (min-width: 1280px) {
+  .join-section {
+    background: url(/images/join/bg-img-desk.jpg);
+  }
+
+  .join-section-wrap {
+    width: 742px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .join-section .section-title {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 48px;
+    line-height: 1.1;
+  }
+
+  .join-section-form {
+    width: 412px;
+    margin-top: 13px;
+  }
+
+  .join-communication-radio-btn-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 16px;
+  }
+
+  .join-communication-radio-btn:checked ~ .join-communication-radio-btn-title {
+    color: #272b33;
+  }
 }
