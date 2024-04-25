@@ -55,8 +55,8 @@ a {
 }
 
 .section {
-  padding-top: 128px;
-  padding-bottom: 128px;
+  padding-top: 64px;
+  padding-bottom: 64px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -82,6 +82,11 @@ a {
 @media screen and (min-width: 1280px) {
   .container {
     width: 1152px;
+  }
+
+  .section {
+    padding-top: 128px;
+    padding-bottom: 128px;
   }
 
   .section-title {

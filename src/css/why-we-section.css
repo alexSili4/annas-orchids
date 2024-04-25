@@ -3,26 +3,63 @@
   padding-bottom: 0;
 }
 
+.why-we-statistics-list {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px 16px;
+  justify-content: center;
+}
+
+.why-we-statistics-value {
+  position: relative;
+  color: #ffb801;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.why-we-statistics-value::after {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0px;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 24.47px;
+  background-image: url("/icons/apple-mobile.svg");
+}
+
+.why-we-statistics-title {
+  margin-top: 32px;
+  color: #000000;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 .why-we-reasons-container {
-  border-radius: 40px 40px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
   background-color: rgba(255, 184, 1, 0.32);
-  margin-top: 203px;
-  padding-top: 156px;
-  padding-bottom: 128px;
+  margin-top: 64px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .why-we-reasons-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 8px;
 }
 
 .why-we-reasons-item {
-  width: calc((100% - 64px) / 3);
+  width: 100%;
 }
 
 .why-we-reason-wrap {
-  padding: 98px 24px 24px;
+  padding: 48px 16px 16px;
   border-radius: 10px;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
@@ -31,103 +68,154 @@
 
 .employment {
   background-image: url("/icons/handshake.svg");
-  background-position: right 24px top 24px;
-  background-size: 65px 41px;
+  background-position: right 16px top 16px;
+  background-size: 43px 27px;
 }
 
 .work-visa {
   background-image: url("/icons/document.svg");
-  background-position: right 24px top 24px;
-  background-size: 31px 42px;
+  background-position: right 16px top 16px;
+  background-size: 24px 33px;
 }
 
 .health-insurance {
   background-image: url("/icons/first-aid-kit.svg");
-  background-position: right 23px top 24px;
-  background-size: 48px 37px;
+  background-position: right 16px top 16px;
+  background-size: 32px 25px;
 }
 
 .salary {
-  background-image: url("/icons/first-aid-kit.svg");
-  background-position: right 23px top 24px;
-  background-size: 48px 37px;
+  background-image: url("/src/icons/wallet.svg");
+  background-position: right 16px top 16px;
+  background-size: 32px 28px;
 }
 
 .comfort {
   background-image: url("/icons/smile.svg");
-  background-position: right 24px top 24px;
-  background-size: 45px 45px;
+  background-position: right 16px top 16px;
+  background-size: 32px 32px;
 }
 
 .fresh-air {
   background-image: url("/icons/leaf.svg");
-  background-position: right 26px top 28px;
-  background-size: 45.3px 39.1px;
+  background-position: right 16px top 16px;
+  background-size: 37px 32px;
 }
 
 .why-we-reason-title {
   color: #000000;
   font-family: Inter;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 800;
   line-height: 1.5;
   text-transform: uppercase;
 }
 
 .why-we-reason-desc {
-  margin-top: 8px;
+  margin-top: 4px;
   color: rgba(0, 0, 0, 0.8);
   font-family: Inter;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
 }
 
-.why-we-statistics-list {
-  position: absolute;
-  top: 336px;
-  left: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 118px;
-  transform: translateX(-50%);
+@media screen and (min-width: 1280px) {
+  .why-we-statistics-list {
+    position: absolute;
+    top: 336px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 118px;
+    width: 100%;
+    margin-top: 0;
+    transform: translateX(-50%);
+  }
+
+  .why-we-statistics-value {
+    font-size: 100px;
+    text-align: center;
+  }
+
+  .why-we-statistics-value::after {
+    top: auto;
+    bottom: -45px;
+    left: 50%;
+    width: 38.04px;
+    height: 46.54px;
+    background-image: url("/icons/apple-desk.svg");
+    transform: translateX(-50%);
+  }
+
+  .why-we-statistics-title {
+    margin-top: 61px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .why-we-reasons-container {
+    border-radius: 40px 40px 0px 0px;
+    margin-top: 203px;
+    padding-top: 156px;
+    padding-bottom: 128px;
+  }
+
+  .why-we-reasons-list {
+    gap: 32px;
+  }
+
+  .why-we-reasons-item {
+    width: calc((100% - 64px) / 3);
+  }
+
+  .why-we-reason-wrap {
+    padding: 98px 24px 24px;
+  }
+
+  .employment {
+    background-position: right 24px top 24px;
+    background-size: 65px 41px;
+  }
+
+  .work-visa {
+    background-position: right 24px top 24px;
+    background-size: 31px 42px;
+  }
+
+  .health-insurance {
+    background-position: right 23px top 24px;
+    background-size: 48px 37px;
+  }
+
+  .salary {
+    background-position: right 23px top 24px;
+    background-size: 48px 37px;
+  }
+
+  .comfort {
+    background-position: right 24px top 24px;
+    background-size: 45px 45px;
+  }
+
+  .fresh-air {
+    background-position: right 26px top 28px;
+    background-size: 45.3px 39.1px;
+  }
+
+  .why-we-reason-title {
+    font-size: 20px;
+  }
+
+  .why-we-reason-desc {
+    margin-top: 8px;
+    font-size: 16px;
+  }
 }
 
-.why-we-statistics-item {
-}
-
-.why-we-statistics-wrap {
-}
-
-.why-we-statistics-value {
-  position: relative;
-  color: #ffb801;
-  font-family: Inter;
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 1.1;
-  text-align: center;
-}
-
-.why-we-statistics-value::after {
-  position: absolute;
-  bottom: -45px;
-  left: 50%;
-  content: "";
-  display: inline-block;
-  width: 38.04px;
-  height: 46.54px;
-  background-image: url("/icons/apple.svg");
-  transform: translateX(-50%);
-}
-
-.why-we-statistics-title {
-  margin-top: 61px;
-  color: #000000;
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.5;
-  text-align: center;
+@media screen and (max-width: 1279px) {
+  .why-we-statistics-item {
+    width: calc((100% - 16px) / 2);
+  }
 }
