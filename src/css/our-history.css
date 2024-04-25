@@ -1,0 +1,46 @@
+.our-history-section.section {
+  padding-bottom: 0;
+}
+
+.our-history-section {
+  background-image: url("/icons/bg-apple.svg"), url("/icons/bg-apple.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 81px) top -83px,
+    left calc(50% + 227px) top 204px;
+  background-size: 312px 340px;
+}
+
+@media screen and (min-width: 1280px) {
+  .our-history-section {
+    background-image: url("/icons/bg-apple.svg"), url("/icons/bg-apple.svg"),
+      url("/icons/bg-apple.svg"), url("/icons/bg-apple.svg"),
+      url("/icons/bg-rotated-apple.svg"), url("/icons/bg-rotated-apple.svg");
+    background-position: left calc(50% - 522.5px) top 67px,
+      left calc(50% + 511px) top 111px, left calc(50% - 634.5px) top -265px,
+      left calc(50% + 522.5px) top -221px, left calc(50% - 690px) top 407px,
+      left calc(50% + 467px) top 451px;
+    background-size: 378px 393px, 378px 393px, 378px 393px, 378px 393px,
+      296px 347px, 296px 347px;
+  }
+}
+
+/*
+
+
+
+.our-history-text-wrap {
+  width: 866px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 64px;
+}
+
+.our-history-desc {
+  margin-top: 32px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+} */
