@@ -116,12 +116,6 @@
     visibility var(--transition-duration-and-func);
 }
 
-.vacancies-list-item.is-hidden .vacancy-card-details {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .vacancies-list-item:not(.is-hidden) {
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
 }

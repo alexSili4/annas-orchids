@@ -118,7 +118,7 @@
 }
 
 @media screen and (max-width: 1279px) {
-  .support-menu.is-hidden {
+  .support-menu.is-hidden-menu {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;

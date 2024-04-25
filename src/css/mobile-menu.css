@@ -14,6 +14,8 @@
     url(/images/hero/bg-img-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center top;
+  transition: visibility var(--transition-duration-and-func),
+    opacity var(--transition-duration-and-func);
 }
 
 .mobile-menu .container {
@@ -79,4 +81,10 @@
   width: 56px;
   height: 56px;
   fill: var(--accent-color);
+}
+
+@media screen and (min-width: 1280px) {
+  .mobile-menu {
+    display: none;
+  }
 }
