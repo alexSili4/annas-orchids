@@ -1,4 +1,5 @@
 .why-we-section {
+  position: relative;
   padding-bottom: 0;
 }
 
@@ -83,9 +84,14 @@
 }
 
 .why-we-statistics-list {
+  position: absolute;
+  top: 336px;
+  left: 50%;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 118px;
+  transform: translateX(-50%);
 }
 
 .why-we-statistics-item {
@@ -95,7 +101,33 @@
 }
 
 .why-we-statistics-value {
+  position: relative;
+  color: #ffb801;
+  font-family: Inter;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.why-we-statistics-value::after {
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  content: "";
+  display: inline-block;
+  width: 38.04px;
+  height: 46.54px;
+  background-image: url("/icons/apple.svg");
+  transform: translateX(-50%);
 }
 
 .why-we-statistics-title {
+  margin-top: 61px;
+  color: #000000;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
 }
