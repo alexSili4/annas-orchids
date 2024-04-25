@@ -1,0 +1,141 @@
+.join-section {
+  width: 100%;
+  background: url(/images/join/bg-img-desk.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.join-section-wrap {
+  width: 742px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.join-section .section-title {
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.join-section-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 412px;
+  margin-top: 13px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.join-section-input {
+  height: 48px;
+  outline: none;
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.32);
+  border-radius: 24px;
+  background-color: transparent;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: #000000;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: border-color var(--transition-duration-and-func);
+}
+
+.join-section-input::placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+
+.join-section-input:is(:hover, :focus, :active) {
+  border-color: #ffb801;
+}
+
+.join-section-input:not(:first-of-type) {
+  margin-top: 8px;
+}
+
+.join-communication-radio-btn-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 16px;
+}
+
+.join-communication-radio-btn-wrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.join-communication-radio-btn-title {
+  color: rgba(39, 43, 51, 0.48);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: color var(--transition-duration-and-func);
+}
+
+.join-communication-custom-radio-btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.join-communication-custom-radio-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16.58px;
+  height: 16.58px;
+  border: 1px solid;
+  border-color: #aeaeb2;
+  border-radius: 50%;
+  transition: border-color var(--transition-duration-and-func);
+}
+
+.join-communication-custom-radio-btn-icon {
+  display: block;
+  width: 15.34px;
+  height: 15.34px;
+  fill: transparent;
+  transition: fill var(--transition-duration-and-func);
+}
+
+.join-communication-radio-btn:checked
+  + .join-communication-custom-radio-btn-wrap
+  > .join-communication-custom-radio-btn {
+  border-color: transparent;
+}
+
+.join-communication-radio-btn:checked
+  + .join-communication-custom-radio-btn-wrap
+  .join-communication-custom-radio-btn-icon {
+  fill: #ffb801;
+}
+
+.join-communication-radio-btn:checked ~ .join-communication-radio-btn-title {
+  color: #264232;
+}
+
+.join-section-form-submit-btn {
+  min-width: 181px;
+  margin-top: 32px;
+  border: none;
+  padding: 12px;
+  align-self: center;
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}

@@ -1,0 +1,79 @@
+<section class="join-section section">
+  <div class="join-section-wrap">
+    <h2 class="section-title">Станьте частиною<br />нашої команди</h2>
+    <form class="join-section-form">
+      <input
+        class="join-section-input"
+        type="text"
+        placeholder="Ім&#39;я"
+        name="user-name"
+        pattern="[а-яєіїґА-ЯЄІЇҐ\s]+"
+        title="Введіть правильне призвище та ім'я"
+        required
+      />
+      <input
+        class="join-section-input"
+        type="tel"
+        placeholder="Номер телефону"
+        name="user-phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="Введіть номер телефону у форматі xxx-xxx-xx-xx"
+        required
+      />
+      <div class="join-communication-radio-btn-list">
+        <label class="join-communication-radio-btn-wrap">
+          <input
+            class="join-communication-radio-btn hidden-element"
+            type="radio"
+            name="join-communication"
+            value="telegram"
+          />
+          <span class="join-communication-custom-radio-btn-wrap">
+            <span class="join-communication-custom-radio-btn">
+              <svg class="join-communication-custom-radio-btn-icon">
+                <use href="/icons/icons.svg#check-mark"></use>
+              </svg>
+            </span>
+          </span>
+          <span class="join-communication-radio-btn-title">Telegram</span>
+        </label>
+        <label class="join-communication-radio-btn-wrap">
+          <input
+            class="join-communication-radio-btn hidden-element"
+            type="radio"
+            name="join-communication"
+            value="viber"
+          />
+          <span class="join-communication-custom-radio-btn-wrap">
+            <span class="join-communication-custom-radio-btn">
+              <svg class="join-communication-custom-radio-btn-icon">
+                <use href="/icons/icons.svg#check-mark"></use>
+              </svg>
+            </span>
+          </span>
+          <span class="join-communication-radio-btn-title">Viber</span>
+        </label>
+        <label class="join-communication-radio-btn-wrap">
+          <input
+            class="join-communication-radio-btn hidden-element"
+            type="radio"
+            name="join-communication"
+            value="call"
+            checked
+          />
+          <span class="join-communication-custom-radio-btn-wrap">
+            <span class="join-communication-custom-radio-btn">
+              <svg class="join-communication-custom-radio-btn-icon">
+                <use href="/icons/icons.svg#check-mark"></use>
+              </svg>
+            </span>
+          </span>
+          <span class="join-communication-radio-btn-title">Дзвінок</span>
+        </label>
+      </div>
+      <button type="submit" class="join-section-form-submit-btn btn">
+        Консультація
+      </button>
+    </form>
+  </div>
+</section>
