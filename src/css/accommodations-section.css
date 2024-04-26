@@ -2,39 +2,98 @@
   background-color: rgba(255, 184, 1, 0.16);
 }
 
-.accommodations-section-desc {
-  width: 802px;
-  margin-top: 32px;
-  margin-left: auto;
-  margin-right: auto;
+.accommodations-desc {
+  margin-top: 16px;
   color: rgba(0, 0, 0, 0.8);
-  font-family: Inter;
-  font-size: 20px;
+  font-family: Montserrat;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  text-align: center;
 }
 
 .accommodations-slider-wrap {
   position: relative;
-  width: 100%;
-  margin-top: 32px;
-  border-radius: 40px;
+  margin-top: 16px;
 }
 
 .accommodations-img {
   width: 100%;
-  height: 540px;
+  height: 160px;
   object-fit: cover;
+  border-radius: 9px;
 }
 
-.accommodations-slider-controls-list {
-  position: absolute;
-  top: 32px;
-  right: 32px;
-  z-index: 10;
+.accommodations-slider-pagination {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.accommodations-slider-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 2px solid #c2d1d9;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  opacity: 1;
+  transition: background-color var(--transition-duration-and-func);
+}
+
+.accommodations-slider-pagination .swiper-pagination-bullet-active {
+  background-color: #000000;
+  border: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .accommodations-desc {
+    width: 802px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Inter;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .accommodations-slider-wrap {
+    margin-top: 32px;
+  }
+
+  .accommodations-img {
+    width: 100%;
+    height: 540px;
+    border-radius: 40px;
+  }
+
+  .accommodations-slider-controls-list {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .accommodations-slider-pagination {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .section-text-wrap:not(.show-more) .accommodations-desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+  }
+
+  .accommodations-slider-controls-list {
+    display: none;
+  }
 }

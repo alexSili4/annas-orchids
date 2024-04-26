@@ -73,8 +73,6 @@
     text-align: center;
   }
 
-
-
   .our-history-slider-wrap {
     width: 1440px;
   }
@@ -91,11 +89,11 @@
 }
 
 @media screen and (max-width: 1279px) {
-  .our-history-text-wrap:not(.show-more) .our-history-desc {
+  .section-text-wrap:not(.show-more) .our-history-desc {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 9;
     -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
   }
 }

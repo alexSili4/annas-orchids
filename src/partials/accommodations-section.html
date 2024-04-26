@@ -1,13 +1,22 @@
 <section class="accommodations-section section">
   <div class="container">
-    <h2 class="section-title">УМОВИ ПРОЖИВАННЯ</h2>
-    <p class="accommodations-section-desc">
-      Наші гуртожитки - це місце, де кожна деталь продумана, щоб забезпечити
-      зручність під час проживання. Пропонуємо затишні кімнати, розроблені для
-      4-6 осіб. Тут Ви знайдете все необхідне для комфортного перебування:
-      власну кухню, повністю обладнану ванну кімнату або душ з безперебійним
-      гарячим водопостачанням, пральну машину, холодильник та доступ до Wi-Fi
-    </p>
+    <div class="section-text-wrap">
+      <!-- <div class="section-text-wrap show-more"> -->
+      <h2 class="section-title">УМОВИ ПРОЖИВАННЯ</h2>
+      <p class="accommodations-desc">
+        Наші гуртожитки - це місце, де кожна деталь продумана, щоб забезпечити
+        зручність під час проживання. Пропонуємо затишні кімнати, розроблені для
+        4-6 осіб. Тут Ви знайдете все необхідне для комфортного перебування:
+        власну кухню, повністю обладнану ванну кімнату або душ з безперебійним
+        гарячим водопостачанням, пральну машину, холодильник та доступ до Wi-Fi
+      </p>
+      <button type="button" class="show-more-btn">
+        <span class="show-more-btn-title">Переглянути більше</span>
+        <svg class="show-more-btn-icon">
+          <use href="/icons/icons.svg#chevron-down"></use>
+        </svg>
+      </button>
+    </div>
     <div class="accommodations-slider-wrap swiper">
       <ul class="swiper-wrapper">
         <li class="swiper-slide">
@@ -48,6 +57,7 @@
           </button>
         </li>
       </ul>
+      <div class="accommodations-slider-pagination slider-pagination"></div>
     </div>
   </div>
 </section>
