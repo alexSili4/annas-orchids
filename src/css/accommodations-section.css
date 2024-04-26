@@ -85,7 +85,11 @@
 }
 
 @media screen and (max-width: 1279px) {
-  .section-text-wrap:not(.show-more) .accommodations-desc {
+  .accommodations-section .section-title {
+    text-align: left;
+  }
+
+  .accommodations-section-text-wrap:not(.show-more) .accommodations-desc {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;

@@ -1,0 +1,103 @@
+.our-history-section.section {
+  padding-bottom: 0;
+}
+
+.our-history-section {
+  background-image: url("/icons/bg-apple.svg"), url("/icons/bg-apple.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 81px) top -83px,
+    left calc(50% + 227px) top 204px;
+  background-size: 312px 340px;
+}
+
+.our-history-text-wrap {
+  padding-bottom: 16px;
+}
+
+.our-history-desc {
+  margin-top: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.our-history-slider-wrap {
+  position: relative;
+  width: 320px;
+  margin-top: 16px;
+}
+
+.our-team-img {
+  width: 320px;
+  height: 189px;
+  object-fit: cover;
+}
+
+.our-history-slider-controls-list {
+  position: absolute;
+  top: 78px;
+  left: 50%;
+  z-index: 10;
+  display: flex;
+  gap: 224px;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 1280px) {
+  .our-history-section {
+    background-image: url("/icons/bg-apple.svg"), url("/icons/bg-apple.svg"),
+      url("/icons/bg-apple.svg"), url("/icons/bg-apple.svg"),
+      url("/icons/bg-rotated-apple.svg"), url("/icons/bg-rotated-apple.svg");
+    background-position: left calc(50% - 522.5px) top 67px,
+      left calc(50% + 511px) top 111px, left calc(50% - 634.5px) top -265px,
+      left calc(50% + 522.5px) top -221px, left calc(50% - 690px) top 407px,
+      left calc(50% + 467px) top 451px;
+    background-size: 378px 393px, 378px 393px, 378px 393px, 378px 393px,
+      296px 347px, 296px 347px;
+  }
+
+  .our-history-text-wrap {
+    width: 866px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 64px;
+  }
+
+  .our-history-desc {
+    margin-top: 32px;
+    font-family: Inter;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .our-history-slider-wrap {
+    width: 1440px;
+    margin-top: 64px;
+  }
+
+  .our-team-img {
+    width: 1440px;
+    height: 629px;
+  }
+
+  .our-history-slider-controls-list {
+    top: 290px;
+    gap: 1160px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .our-history-section .section-title {
+    text-align: left;
+  }
+
+  .our-history-section-text-wrap:not(.show-more) .our-history-desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+  }
+}
