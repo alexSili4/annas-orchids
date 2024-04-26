@@ -1,0 +1,64 @@
+.life-change-section {
+  width: 100%;
+  background-image: url("../images/life-change/bg-img-desk.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .life-change-slider-pagination {
+    display: none;
+  }
+}
+
+.life-change-section .section-title {
+  color: var(--white-color);
+  font-size: 64px;
+}
+
+.life-change-slider-wrap {
+  position: relative;
+  width: 716px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.life-change-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-radius: 61px;
+  background-color: var(--white-color);
+  padding: 15px;
+}
+
+.life-change-card-img {
+  flex-shrink: 0;
+  width: 329px;
+  height: 268px;
+  border-radius: 61px;
+  object-fit: cover;
+}
+
+.life-change-card-text {
+  color: #000000;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.life-change-slider-controls-list {
+  position: absolute;
+  top: 113px;
+  left: 50%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 748px;
+  transform: translateX(-50%);
+}
+
+.life-change-slider-pagination {
+}
