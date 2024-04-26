@@ -23,34 +23,6 @@
   line-height: 1.5;
 }
 
-.our-history-show-more-btn {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.our-history-show-more-btn-title {
-  color: var(--accent-color);
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.5;
-}
-
-.our-history-show-more-btn-icon {
-  display: block;
-  width: 9px;
-  height: 4.5px;
-  transition: transform var(--transition-duration-and-func);
-}
-
-.our-history-text-wrap.show-more .our-history-show-more-btn-icon {
-  transform: rotate(180deg);
-}
-
 .our-history-slider-wrap {
   position: relative;
   width: 320px;
@@ -101,9 +73,7 @@
     text-align: center;
   }
 
-  .our-history-show-more-btn {
-    display: none;
-  }
+
 
   .our-history-slider-wrap {
     width: 1440px;

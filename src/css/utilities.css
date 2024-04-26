@@ -85,6 +85,34 @@ a {
   text-transform: uppercase;
 }
 
+.show-more-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.show-more-btn-title {
+  color: var(--accent-color);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.show-more-btn-icon {
+  display: block;
+  width: 9px;
+  height: 4.5px;
+  transition: transform var(--transition-duration-and-func);
+}
+
+.our-history-text-wrap.show-more .show-more-btn-icon {
+  transform: rotate(180deg);
+}
+
 @media screen and (min-width: 1280px) {
   .container {
     width: 1152px;
@@ -99,5 +127,9 @@ a {
     font-size: 72px;
     font-weight: 700;
     line-height: 1;
+  }
+
+  .show-more-btn {
+    display: none;
   }
 }
