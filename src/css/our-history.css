@@ -51,6 +51,29 @@
   transform: rotate(180deg);
 }
 
+.our-history-slider-wrap {
+  position: relative;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our-team-img {
+  width: 320px;
+  height: 189px;
+  object-fit: cover;
+}
+
+.our-history-slider-controls-list {
+  position: absolute;
+  top: 78px;
+  left: 50%;
+  z-index: 10;
+  display: flex;
+  gap: 224px;
+  transform: translateX(-50%);
+}
+
 @media screen and (min-width: 1280px) {
   .our-history-section {
     background-image: url("/icons/bg-apple.svg"), url("/icons/bg-apple.svg"),
@@ -80,6 +103,20 @@
 
   .our-history-show-more-btn {
     display: none;
+  }
+
+  .our-history-slider-wrap {
+    width: 1440px;
+  }
+
+  .our-team-img {
+    width: 1440px;
+    height: 629px;
+  }
+
+  .our-history-slider-controls-list {
+    top: 290px;
+    gap: 1160px;
   }
 }
 

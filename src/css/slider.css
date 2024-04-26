@@ -1,0 +1,30 @@
+.slider-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.slider-button-icon {
+  display: block;
+  width: 13.71px;
+  height: 12px;
+
+  fill: #000000;
+}
+
+@media screen and (min-width: 1280px) {
+  .slider-button {
+    width: 48px;
+    height: 48px;
+  }
+
+  .slider-button-icon {
+    width: 18.29px;
+    height: 16px;
+  }
+}
