@@ -171,7 +171,7 @@
 
 @media screen and (min-width: 1280px) {
   .join-section {
-    background-image: url("../images/join/bg-img-desk.jpg");
+    background-image: url("/images/join/bg-img-desk.jpg");
   }
 
   .join-section-wrap {

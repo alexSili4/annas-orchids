@@ -1,2 +1,2 @@
 import "modern-normalize";
-import "./swiper";
+import "/js/swiper";
