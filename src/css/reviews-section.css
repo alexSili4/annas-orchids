@@ -1,0 +1,98 @@
+.reviews-slider-wrap {
+  position: relative;
+  margin-top: 64px;
+}
+
+.reviews-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+  min-height: 540px;
+  border-radius: 40px;
+  background-color: #ffb801;
+  padding-left: 64px;
+  padding-right: 96px;
+}
+
+.reviews-card-text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  align-self: start;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.reviews-card-title {
+  color: var(--white-color);
+  font-family: Inter;
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.reviews-card-desc {
+  color: rgba(0, 0, 0, 0.72);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.reviews-card-img-wrap {
+  position: relative;
+  align-self: start;
+  flex-shrink: 0;
+  padding-top: 115px;
+}
+
+.reviews-card-img {
+  box-sizing: content-box;
+  width: 298px;
+  height: 330px;
+  border: 17px solid var(--white-color);
+  border-radius: 37px;
+  background-color: var(--white-color);
+}
+
+.reviews-card-link {
+  position: absolute;
+  bottom: -7px;
+  left: -70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 11px;
+  min-width: 267px;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  padding: 7px 18px 7px 16px;
+  color: #000000;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.reviews-card-link::after {
+  content: "";
+  background-image: url("/icons/fb-logo.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.reviews-slider-controls-list {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.reviews-slider-pagination {
+  display: none;
+}
