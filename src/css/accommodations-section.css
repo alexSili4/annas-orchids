@@ -89,7 +89,7 @@
     text-align: left;
   }
 
-  .accommodations-section-text-wrap:not(.show-more) .accommodations-desc {
+  .accommodations-section-text-wrap.hidden-desc .accommodations-desc {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;

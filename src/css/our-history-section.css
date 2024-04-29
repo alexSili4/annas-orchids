@@ -94,7 +94,7 @@
     text-align: left;
   }
 
-  .our-history-section-text-wrap:not(.show-more) .our-history-desc {
+  .our-history-section-text-wrap.hidden-desc .our-history-desc {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
