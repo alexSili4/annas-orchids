@@ -110,7 +110,7 @@ a {
   transition: transform var(--transition-duration-and-func);
 }
 
-.section-text-wrap.show-more .show-more-btn-icon {
+.section-text-wrap:not(.hidden-desc) .show-more-btn-icon {
   transform: rotate(180deg);
 }
 
