@@ -1,64 +1,122 @@
 .life-change-section {
   width: 100%;
-  background-image: url("/images/life-change/bg-img-desk.jpg");
+  height: 631px;
+  background-image: url("/images/life-change/bg-img-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-@media screen and (min-width: 1280px) {
-  .life-change-slider-pagination {
-    display: none;
-  }
-}
-
 .life-change-section .section-title {
   color: var(--white-color);
-  font-size: 64px;
+  font-size: 30px;
 }
 
 .life-change-slider-wrap {
   position: relative;
-  width: 716px;
   margin-top: 32px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .life-change-card {
   display: flex;
-  align-items: center;
-  gap: 24px;
-  border-radius: 61px;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 40px;
   background-color: var(--white-color);
-  padding: 15px;
+  padding: 16px 16px 32px;
 }
 
 .life-change-card-img {
   flex-shrink: 0;
-  width: 329px;
-  height: 268px;
-  border-radius: 61px;
+  width: 256px;
+  height: 203px;
+  border-radius: 40px;
   object-fit: cover;
 }
 
 .life-change-card-text {
   color: #000000;
   font-family: Inter;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
 }
 
 .life-change-slider-controls-list {
-  position: absolute;
-  top: 113px;
-  left: 50%;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  gap: 748px;
-  transform: translateX(-50%);
+  display: none;
 }
 
 .life-change-slider-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.life-change-slider-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 2px solid #c2d1d9;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  opacity: 1;
+  transition: background-color var(--transition-duration-and-func);
+}
+
+.life-change-slider-pagination .swiper-pagination-bullet-active {
+  background-color: var(--white-color);
+  border: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .life-change-section {
+    height: auto;
+    background-image: url("/images/life-change/bg-img-desk.jpg");
+  }
+
+  .life-change-section .section-title {
+    font-size: 64px;
+    line-height: 1.1;
+  }
+
+  .life-change-slider-wrap {
+    width: 716px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .life-change-card {
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    border-radius: 61px;
+    padding: 15px;
+    padding-right: 34px;
+  }
+
+  .life-change-card-img {
+    width: 329px;
+    height: 268px;
+    border-radius: 61px;
+  }
+
+  .life-change-card-text {
+    font-size: 24px;
+  }
+
+  .life-change-slider-controls-list {
+    position: absolute;
+    top: 113px;
+    left: 50%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 748px;
+    transform: translateX(-50%);
+  }
+
+  .life-change-slider-pagination {
+    display: none;
+  }
 }
