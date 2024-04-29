@@ -9,15 +9,14 @@
 @import url("./vacancies-section.css");
 @import url("./why-we-section.css");
 @import url("./join-section.css");
+@import url("./join-us-form.css");
+@import url("./join-us-form-success-msg.css");
 @import url("./our-history-section.css");
 @import url("./accommodations-section.css");
 @import url("./working-conditions-section.css");
 @import url("./life-change-section.css");
 @import url("./reviews-section.css");
 @import url("./questions-section.css");
-/* @import url('./catalog.css'); */
-/* @import url('./new-watches.css'); */
-/* @import url('./sale.css'); */
-/* @import url('./modal.css'); */
+@import url("./join-our-team-section.css");
 @import url("./support-menu.css");
 @import url("./footer.css");

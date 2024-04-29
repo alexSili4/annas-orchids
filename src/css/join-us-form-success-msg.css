@@ -1,0 +1,43 @@
+.join-us-form-success-msg-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 100%;
+  height: 100%;
+  transition: opacity var(--transition-duration-and-func),
+    visibility var(--transition-duration-and-func);
+}
+
+.join-us-form-success-msg-title {
+  color: #0c6535;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.join-section-form-success-msg {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+@media screen and (min-width: 1280px) {
+  .join-us-form-success-msg-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .join-section-form-success-msg {
+    color: #0d1321;
+  }
+}

@@ -1,11 +1,15 @@
-.join-section {
+.join-our-team-section {
   width: 100%;
-  background-image: url(/images/join/bg-img-mobile.jpg);
+  background-image: url(/images/join-our-team/bg-img-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.join-section-wrap {
+.join-our-team-section.section {
+  padding-bottom: 63px;
+}
+
+.join-our-team-section-wrap {
   position: relative;
   width: 288px;
   border-radius: 20px;
@@ -16,32 +20,33 @@
   padding-bottom: 32px;
 }
 
-.join-our-team-form-wrap {
+.join-our-team-section-form-wrap {
   transition: opacity var(--transition-duration-and-func),
     visibility var(--transition-duration-and-func);
 }
 
-.join-us-form-title {
+.join-our-team-form-title {
   color: #0c6535;
   font-family: Inter;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
+  line-height: 1;
   text-align: center;
   text-transform: uppercase;
 }
 
 @media screen and (min-width: 1280px) {
-  .join-section {
-    background-image: url("/images/join/bg-img-desk.jpg");
+  .join-our-team-section {
+    background-image: url("/images/join-our-team/bg-img-desk.jpg");
   }
 
-  .join-section-wrap {
+  .join-our-team-section-wrap {
     width: 742px;
     padding-top: 64px;
     padding-bottom: 64px;
   }
 
-  .join-us-form-title {
+  .join-our-team-form-title {
     width: 730px;
     font-size: 48px;
     line-height: 1.1;
