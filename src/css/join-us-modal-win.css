@@ -17,7 +17,29 @@ body:not(:has(.join-us-modal-win-backdrop.is-hidden)) {
 }
 
 .join-us-modal-win-backdrop .join-section-wrap {
+  position: relative;
   background-color: var(--white-color);
+}
+
+.close-modal-win-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.close-modal-win-btn-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: rgba(0, 0, 0, 0.48);
+  transition: fill var(--transition-duration-and-func);
+}
+
+.close-modal-win-btn:is(:hover, :focus) .close-modal-win-btn-icon {
+  fill: var(--accent-color);
 }
 
 @media screen and (min-height: 388px) {
@@ -28,12 +50,24 @@ body:not(:has(.join-us-modal-win-backdrop.is-hidden)) {
 
 @media screen and (max-width: 1279px) {
   .join-us-modal-win-backdrop .join-us-form-title {
-    color: #0c6535;
+    color: var(--accent-color);
     font-family: Inter;
     font-size: 22px;
     font-weight: 700;
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .close-modal-win-btn {
+    top: 20px;
+    right: 20px;
+  }
+
+  .close-modal-win-btn-icon {
+    width: 32px;
+    height: 32px;
   }
 }
