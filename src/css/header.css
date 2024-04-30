@@ -159,6 +159,10 @@
     gap: 32px;
   }
 
+  .phone-link {
+    display: none;
+  }
+
   .mobile-menu-toggle {
     display: none;
   }
@@ -176,4 +180,53 @@
   .header-list .consultation-btn {
     display: none;
   }
+
+  .phone-btn-wrap {
+    display: none;
+  }
+}
+
+.phone-btn-wrap {
+  position: relative;
+}
+
+.phone-btn {
+  display: block;
+  padding: 0;
+  border: none;
+}
+
+.phone-btn:is(:hover, :focus) .phone-link-icon {
+  fill: var(--accent-color);
+}
+
+.phone-btn-link {
+  position: absolute;
+  top: calc(100% + 18px);
+  left: 50%;
+  display: block;
+  padding: 12px 6px;
+  border-radius: 8px;
+  background-color: #fffcf9;
+  color: rgba(13, 19, 33, 0.72);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33;
+  text-wrap: nowrap;
+  transform: translateX(-50%);
+  transition: visibility var(--transition-duration-and-func),
+    opacity var(--transition-duration-and-func);
+}
+
+.phone-btn-link::before {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 8px;
+  background-image: url("/icons/call-us-arrow.svg");
+  transform: translateX(-50%);
 }
