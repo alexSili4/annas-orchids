@@ -16,6 +16,7 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".slider-button-prev",
   },
   pagination: {
+    clickable:true,
     el: ".slider-pagination",
   },
 });

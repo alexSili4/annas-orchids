@@ -11,6 +11,15 @@
   line-height: 1.5;
 }
 
+.accommodations-slider-container {
+  position: relative;
+}
+
+.accommodations-slider-container .swiper {
+  position: static !important;
+  border-radius: 9px;
+}
+
 .accommodations-slider-wrap {
   position: relative;
   margin-top: 16px;
@@ -24,11 +33,14 @@
 }
 
 .accommodations-slider-pagination {
+  position: absolute;
+  top: calc(100% + 16px) !important;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-top: 16px;
+  width: 100%;
+  height: 10px;
 }
 
 .accommodations-slider-pagination .swiper-pagination-bullet {
@@ -58,6 +70,10 @@
     text-align: center;
   }
 
+  .accommodations-slider-container .swiper {
+    border-radius: 40px;
+  }
+
   .accommodations-slider-wrap {
     margin-top: 32px;
   }
@@ -85,6 +101,10 @@
 }
 
 @media screen and (max-width: 1279px) {
+  .accommodations-section.section {
+    padding-bottom: 90px;
+  }
+  
   .accommodations-section .section-title {
     text-align: left;
   }

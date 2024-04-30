@@ -1,3 +1,12 @@
+.reviews-slider-container {
+  position: relative;
+}
+
+.reviews-slider-container .swiper {
+  position: static !important;
+  border-radius: 20px;
+}
+
 .reviews-slider-wrap {
   position: relative;
   margin-top: 32px;
@@ -6,7 +15,7 @@
 .reviews-card {
   border-radius: 20px;
   background-color: #ffb801;
-  padding: 32px 16px 42px;
+  padding: 32px 10px 42px 16px;
 }
 
 .reviews-card-text-wrap {
@@ -41,7 +50,7 @@
 }
 
 .reviews-card-img {
-  width: 100%;
+  width: 256px;
   height: auto;
   border: 11.33px solid var(--white-color);
   border-radius: 24.66px;
@@ -52,7 +61,7 @@
   position: absolute;
   bottom: -10px;
   left: 70px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
@@ -64,6 +73,7 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 1.1;
+  text-wrap: nowrap;
 }
 
 .reviews-card-link::after {
@@ -81,11 +91,14 @@
 }
 
 .reviews-slider-pagination {
+  position: absolute;
+  top: calc(100% + 32px) !important;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-top: 32px;
+  width: 100%;
+  height: 10px;
 }
 
 .reviews-slider-pagination .swiper-pagination-bullet {
@@ -105,6 +118,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .reviews-slider-container .swiper {
+    border-radius: 40px;
+  }
+
   .reviews-slider-wrap {
     margin-top: 64px;
   }
@@ -128,6 +145,14 @@
   .reviews-card-title {
     font-size: 44px;
     font-weight: 800;
+  }
+
+  .reviews-section .swiper-slide:first-child .reviews-card-desc {
+    width: 510px;
+  }
+
+  .reviews-card-desc {
+    width: 533px;
   }
 
   .reviews-card-img-wrap {
@@ -178,6 +203,10 @@
 }
 
 @media screen and (max-width: 1279px) {
+  .reviews-section.section {
+    padding-bottom: 106px;
+  }
+
   .reviews-card.hidden-desc .reviews-card-desc {
     overflow: hidden;
     text-overflow: ellipsis;

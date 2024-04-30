@@ -1,6 +1,5 @@
 .life-change-section {
   width: 100%;
-  height: 631px;
   background-image: url("/images/life-change/bg-img-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -16,10 +15,16 @@
   margin-top: 32px;
 }
 
+.life-change-slider-wrap .swiper {
+  position: static !important;
+  border-radius: 40px;
+}
+
 .life-change-card {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  height: 100%;
   border-radius: 40px;
   background-color: var(--white-color);
   padding: 16px 16px 32px;
@@ -46,11 +51,14 @@
 }
 
 .life-change-slider-pagination {
+  position: absolute;
+  top: calc(100% + 32px) !important;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-top: 32px;
+  width: 100%;
+  height: 10px;
 }
 
 .life-change-slider-pagination .swiper-pagination-bullet {
@@ -86,6 +94,10 @@
     margin-right: auto;
   }
 
+  .life-change-slider-wrap .swiper {
+    border-radius: 61px;
+  }
+
   .life-change-card {
     flex-direction: row;
     gap: 24px;
@@ -118,5 +130,15 @@
 
   .life-change-slider-pagination {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .life-change-section.section {
+    padding-bottom: 106px;
+  }
+
+  .life-change-slider-wrap .slide-wrap {
+    height: 363px;
   }
 }
