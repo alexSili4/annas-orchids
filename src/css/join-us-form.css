@@ -149,7 +149,8 @@
     color: #272b33;
   }
 
-  .join-section-form-submit-btn {
+  .join-us-form-submit-btn {
+    min-width: 181px;
     margin-top: 32px;
   }
 

@@ -1,0 +1,39 @@
+body:not(:has(.join-us-modal-win-backdrop.is-hidden)) {
+  overflow-y: hidden;
+}
+
+.join-us-modal-win-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.48);
+  overflow-y: auto;
+}
+
+.join-us-modal-win-backdrop .join-section-wrap {
+  background-color: var(--white-color);
+}
+
+@media screen and (min-height: 388px) {
+  .join-us-modal-win-backdrop {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .join-us-modal-win-backdrop .join-us-form-title {
+    color: #0c6535;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
