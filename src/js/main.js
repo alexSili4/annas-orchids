@@ -8,7 +8,7 @@ refs.nameInput.forEach((el) => {
 });
 
 function onNameFieldInput(e) {
-  const regex = /^[А-Яа-яЇїІіЄєҐґ'\s]*$/;
+  const regex = /^[A-zА-Яa-zа-яЇїІіЄєҐґ'\s]*$/;
   const input = e.target.value;
 
   if (!regex.test(input)) {
