@@ -11,13 +11,14 @@ body:has(.mobile-menu:not(.is-hidden)) {
   height: 100%;
   padding-top: 8px;
   padding-bottom: 32px;
-  background: linear-gradient(
+  background-image: linear-gradient(
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.9)
     ),
-    url(/images/hero/bg-img-mobile.jpg);
+    url('/images/hero/bg-img-mobile.jpg');
   background-repeat: no-repeat;
-  background-position: center top;
+  background-size: cover;
+  background-position: top center;
   overflow-y: scroll;
   transition: visibility var(--transition-duration-and-func),
     opacity var(--transition-duration-and-func);
