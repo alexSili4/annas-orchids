@@ -27,23 +27,30 @@
     <div class="header-list">
       <button type="button" class="header-lang-btn">ua</button>
       <div class="phone-btn-wrap">
-        <button type="button" class="phone-btn js-phone-btn">
-          <svg class="phone-link-icon">
+        <div class="phone-btn-link-wrap">
+          <button type="button" class="phone-btn js-phone-btn">
+            <svg class="phone-link-icon">
+              <use href="/icons/icons.svg#phone"></use>
+            </svg>
+          </button>
+          <a href="tel:+380638175758" class="phone-btn-link js-phone-btn-link"
+            >+380 (63) 817 57 58</a
+          >
+        </div>
+        <button type="button" class="phone-btn js-phone-btn icon-scale">
+          <svg class="phone-link-icon fake">
             <use href="/icons/icons.svg#phone"></use>
           </svg>
         </button>
-        <a
-          href="tel:+380638175758"
-          class="phone-btn-link js-phone-btn-link is-hidden"
-          >+380 (63) 817 57 58</a
-        >
       </div>
-      <a href="#" class="phone-link">
+      <a href="tel:+380638175758" class="phone-link">
         <svg class="phone-link-icon">
           <use href="/icons/icons.svg#phone"></use>
         </svg>
       </a>
-      <button type="button" class="btn consultation-btn js-consultation-btn">Консультація</button>
+      <button type="button" class="btn consultation-btn js-consultation-btn">
+        Консультація
+      </button>
       <button type="button" class="mobile-menu-toggle js-mobile-menu-toggle">
         <svg class="mobile-menu-icon">
           <use href="/icons/icons.svg#menu-hamburger"></use>

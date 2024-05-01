@@ -4,7 +4,6 @@ import refs from './refs';
 
 const isHiddenClassName = 'is-hidden';
 
-refs.phoneBtn.addEventListener('click', onPhoneBtnClick);
 refs.consultationBtn.forEach((el) => {
   el.addEventListener('click', toggleModalWinState);
 });
@@ -39,11 +38,6 @@ function toggleShowMoreText(e) {
   const targetClassName = 'hidden-desc';
   const hiddenTextElement = e.currentTarget.closest('.js-hidden-desc');
   hiddenTextElement.classList.toggle(targetClassName);
-}
-
-function onPhoneBtnClick(e) {
-  e.currentTarget.blur();
-  refs.phoneBtnLink.classList.toggle(isHiddenClassName);
 }
 
 function toggleModalWinState(e) {
