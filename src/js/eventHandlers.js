@@ -2,14 +2,15 @@ import refs from './refs';
 
 const isHiddenClassName = 'is-hidden';
 
-refs.consultationBtn.forEach((el) => {
-  el.addEventListener('click', toggleModalWinState);
-});
 refs.heroJoinUsBtn.addEventListener('click', toggleModalWinState);
 refs.closeModalWinBtn.addEventListener('click', toggleModalWinState);
 refs.vacanciesList.addEventListener('click', toggleShowMoreVacancyDetails);
 refs.vacanciesList.addEventListener('click', onJoinUsBtnClick);
 refs.questionsList.addEventListener('click', toggleShowAnswer);
+refs.supportBnt.addEventListener('click', toggleSupportMenuState);
+refs.consultationBtn.forEach((el) => {
+  el.addEventListener('click', toggleModalWinState);
+});
 refs.showMoreBtn.forEach((el) => {
   el.addEventListener('click', toggleShowMoreText);
 });
@@ -17,6 +18,11 @@ refs.mobileMenuToggleBtn.forEach((el) => {
   el.addEventListener('click', toggleMobileMenu);
 });
 refs.mobileMenuList.addEventListener('click', onMobileMenuListClick);
+
+function toggleSupportMenuState(e) {
+  e.currentTarget.blur();
+  refs.supportMenu.classList.toggle('is-hidden-menu');
+}
 
 function onMobileMenuListClick(e) {
   const isTargetQuestionBtn = e.target.closest('.js-mobile-menu-link');

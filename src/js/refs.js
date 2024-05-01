@@ -12,6 +12,9 @@ const refs = {
   mobileMenu: document.querySelector('.js-mobile-menu'),
   mobileMenuList: document.querySelector('.js-mobile-menu-list'),
   nameInput: document.querySelectorAll('.js-join-us-form-name-input'),
+  phoneInput: document.querySelectorAll('.js-join-us-form-phone-input'),
+  supportBnt: document.querySelector('.js-support-bnt'),
+  supportMenu: document.querySelector('.js-support-menu'),
 };
 
 export default refs;
