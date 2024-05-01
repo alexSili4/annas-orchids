@@ -5,10 +5,6 @@
   background-position: center;
 }
 
-.join-our-team-section.section {
-  padding-bottom: 63px;
-}
-
 .join-our-team-section-wrap {
   position: relative;
   width: 288px;
@@ -50,5 +46,11 @@
     width: 730px;
     font-size: 48px;
     line-height: 1.1;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .join-our-team-section.section {
+    padding-bottom: 63px;
   }
 }
