@@ -11,6 +11,7 @@ const refs = {
   mobileMenuToggleBtn: document.querySelectorAll('.js-mobile-menu-toggle'),
   mobileMenu: document.querySelector('.js-mobile-menu'),
   mobileMenuList: document.querySelector('.js-mobile-menu-list'),
+  nameInput: document.querySelectorAll('.js-join-us-form-name-input'),
 };
 
 export default refs;
