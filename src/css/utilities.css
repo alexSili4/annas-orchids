@@ -83,6 +83,7 @@ a {
 }
 
 .show-more-btn {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -92,12 +93,32 @@ a {
   background-color: transparent;
 }
 
-.show-more-btn-title {
+.show-more-btn-text {
   color: var(--accent-color);
   font-family: Inter;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
+  transition: opacity var(--transition-duration-and-func),
+    visibility var(--transition-duration-and-func);
+}
+
+.hide-more-btn-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section-text-wrap.hidden-desc .hide-more-btn-title {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.section-text-wrap:not(.hidden-desc) .show-more-btn-title {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .show-more-btn-icon {

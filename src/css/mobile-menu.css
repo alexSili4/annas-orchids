@@ -1,3 +1,7 @@
+body:has(.mobile-menu:not(.is-hidden)) {
+  overflow-y: hidden;
+}
+
 .mobile-menu {
   position: absolute;
   top: 0;
@@ -14,6 +18,7 @@
     url(/images/hero/bg-img-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center top;
+  overflow-y: scroll;
   transition: visibility var(--transition-duration-and-func),
     opacity var(--transition-duration-and-func);
 }
