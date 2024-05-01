@@ -99,10 +99,6 @@
   fill: transparent;
 }
 
-.phone-link:is(:hover, :focus) .phone-link-icon {
-  fill: var(--accent-color);
-}
-
 .mobile-menu-toggle {
   padding: 0;
   border: none;

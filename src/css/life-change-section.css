@@ -1,6 +1,7 @@
 .life-change-section {
   width: 100%;
-  background-image: url("/images/life-change/bg-img-mobile.jpg");
+  background-image: url('/images/life-change/bg-img-mobile.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -79,8 +80,7 @@
 
 @media screen and (min-width: 1280px) {
   .life-change-section {
-    height: auto;
-    background-image: url("/images/life-change/bg-img-desk.jpg");
+    background-image: url('/images/life-change/bg-img-desk.jpg');
   }
 
   .life-change-section .section-title {

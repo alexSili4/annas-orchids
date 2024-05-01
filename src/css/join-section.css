@@ -1,6 +1,7 @@
 .join-section {
   width: 100%;
-  background-image: url(/images/join/bg-img-mobile.jpg);
+  background-image: url('/images/join/bg-img-mobile.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -33,7 +34,7 @@
 
 @media screen and (min-width: 1280px) {
   .join-section {
-    background-image: url("/images/join/bg-img-desk.jpg");
+    background-image: url('/images/join/bg-img-desk.jpg');
   }
 
   .join-section-wrap {

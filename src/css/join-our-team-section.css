@@ -1,6 +1,6 @@
 .join-our-team-section {
-  width: 100%;
-  background-image: url(/images/join-our-team/bg-img-mobile.jpg);
+  background-image: url('/images/join-our-team/bg-img-mobile.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -37,7 +37,7 @@
 
 @media screen and (min-width: 1280px) {
   .join-our-team-section {
-    background-image: url("/images/join-our-team/bg-img-desk.jpg");
+    background-image: url('/images/join-our-team/bg-img-desk.jpg');
   }
 
   .join-our-team-section-wrap {
