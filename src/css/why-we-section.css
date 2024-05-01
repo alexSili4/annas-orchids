@@ -11,8 +11,11 @@
   justify-content: center;
 }
 
-.why-we-statistics-value {
+.why-we-statistics-value-wrap {
   position: relative;
+}
+
+.why-we-statistics-value {
   color: #ffb801;
   font-family: Inter;
   font-size: 48px;
@@ -20,15 +23,15 @@
   line-height: 1.1;
 }
 
-.why-we-statistics-value::after {
+.why-we-statistics-value-after {
   position: absolute;
   top: calc(100% + 4px);
   left: 0px;
-  content: "";
+  content: '';
   display: inline-block;
   width: 20px;
   height: 24.47px;
-  background-image: url("/icons/apple-mobile.svg");
+  background-image: url('/icons/apple-mobile.svg');
 }
 
 .why-we-statistics-title {
@@ -67,37 +70,37 @@
 }
 
 .employment {
-  background-image: url("/icons/handshake.svg");
+  background-image: url('/icons/handshake.svg');
   background-position: right 16px top 16px;
   background-size: 43px 27px;
 }
 
 .work-visa {
-  background-image: url("/icons/document.svg");
+  background-image: url('/icons/document.svg');
   background-position: right 16px top 16px;
   background-size: 24px 33px;
 }
 
 .health-insurance {
-  background-image: url("/icons/first-aid-kit.svg");
+  background-image: url('/icons/first-aid-kit.svg');
   background-position: right 16px top 16px;
   background-size: 32px 25px;
 }
 
 .salary {
-  background-image: url("/icons/wallet.svg");
+  background-image: url('/icons/wallet.svg');
   background-position: right 16px top 16px;
   background-size: 32px 28px;
 }
 
 .comfort {
-  background-image: url("/icons/smile.svg");
+  background-image: url('/icons/smile.svg');
   background-position: right 16px top 16px;
   background-size: 32px 32px;
 }
 
 .fresh-air {
-  background-image: url("/icons/leaf.svg");
+  background-image: url('/icons/leaf.svg');
   background-position: right 16px top 16px;
   background-size: 37px 32px;
 }
@@ -139,14 +142,13 @@
     text-align: center;
   }
 
-  .why-we-statistics-value::after {
+  .why-we-statistics-value-after {
     top: auto;
     bottom: -45px;
-    left: 50%;
+    left: calc(50% - (38.04px / 2));
     width: 38.04px;
     height: 46.54px;
-    background-image: url("/icons/apple-desk.svg");
-    transform: translateX(-50%);
+    background-image: url('/icons/apple-desk.svg');
   }
 
   .why-we-statistics-title {
