@@ -15,6 +15,7 @@ const refs = {
   phoneInput: document.querySelectorAll('.js-join-us-form-phone-input'),
   supportBnt: document.querySelector('.js-support-bnt'),
   supportMenu: document.querySelector('.js-support-menu'),
+  statisticsList: document.querySelector('.js-statistics-list'),
 };
 
 export default refs;
