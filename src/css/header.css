@@ -135,6 +135,7 @@
 .phone-btn-link {
   position: relative;
   display: block;
+  width: 100%;
   padding: 12px 6px;
   border-radius: 8px;
   background-color: #fffcf9;
@@ -144,8 +145,8 @@
   font-weight: 400;
   line-height: 1.33;
   text-wrap: nowrap;
-  transition: visibility var(--transition-duration-and-func),
-    opacity var(--transition-duration-and-func);
+  /* transition: visibility var(--transition-duration-and-func),
+    opacity var(--transition-duration-and-func); */
 }
 
 .phone-btn-link::before {
@@ -198,19 +199,29 @@
   .phone-btn-link-wrap {
     position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .phone-btn-link-bg {
+    position: absolute;
     left: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
+    align-items: flex-end;
+    justify-content: center;
+    width: 128px;
+    height: 58px;
     transform: translateX(-50%);
+    transition: opacity var(--transition-duration-and-func),
+      visibility var(--transition-duration-and-func),transform var(--transition-duration-and-func);
   }
 
   .phone-btn-link-wrap:is(:hover, :focus) .phone-btn {
     transform: scale(1.1);
   }
 
-  .phone-btn-link-wrap:not(:is(:hover, :focus)) .phone-btn-link {
+  .phone-btn-link-wrap:not(:is(:hover, :focus)) .phone-btn-link-bg {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
