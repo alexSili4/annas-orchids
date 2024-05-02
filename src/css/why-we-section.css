@@ -23,6 +23,16 @@
   line-height: 1.1;
 }
 
+.why-we-statistics-value.why-we-statistics-hidden-value {
+  color: transparent;
+}
+
+.statistics-alt-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .why-we-statistics-value-after {
   position: absolute;
   top: calc(100% + 4px);
@@ -140,6 +150,11 @@
   .why-we-statistics-value {
     font-size: 100px;
     text-align: center;
+  }
+
+  .statistics-alt-value {
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .why-we-statistics-value-after {
