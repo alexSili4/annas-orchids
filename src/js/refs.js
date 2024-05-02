@@ -16,6 +16,7 @@ const refs = {
   supportBnt: document.querySelector('.js-support-bnt'),
   supportMenu: document.querySelector('.js-support-menu'),
   counter: document.querySelectorAll('.js-statistics-value-wrap'),
+  statisticsList: document.querySelector('.js-statistics-list'),
 };
 
 export default refs;
