@@ -1,7 +1,7 @@
 .support-menu-container {
   position: fixed;
-  right: 92px;
-  bottom: 64px;
+  right: 15px;
+  bottom: 15px;
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -82,7 +82,7 @@
 
 @media screen and (min-width: 1280px) {
   .support-menu-container {
-    right: 16px;
+    right: 92px;
     bottom: 64px;
   }
 
