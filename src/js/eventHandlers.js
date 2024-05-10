@@ -99,6 +99,7 @@ function onSeasonsListInput(e) {
 
   if (targetClassName === radioBtnName) {
     e.target.checked = false;
+    radioBtnName = null;
     refs.vacanciesList.classList.remove(targetClassName);
 
     return;
