@@ -1,7 +1,9 @@
 import refs from './refs';
 
 const isHiddenClassName = 'is-hidden';
+let radioBtnName = null;
 
+refs.seasonsList.addEventListener('click', onSeasonsListInput);
 refs.heroJoinUsBtn.addEventListener('click', toggleModalWinState);
 refs.closeModalWinBtn.addEventListener('click', toggleModalWinState);
 refs.vacanciesList.addEventListener('click', toggleShowMoreVacancyDetails);
@@ -85,4 +87,24 @@ function toggleShowAnswer(e) {
 
   const questionContainer = e.target.closest('.js-question-wrap');
   questionContainer.classList.toggle(targetClassName);
+}
+
+function onSeasonsListInput(e) {
+  const isInput = e.target.nodeName === 'INPUT';
+  const { value: targetClassName } = e.target;
+
+  if (!isInput) {
+    return;
+  }
+
+  if (targetClassName === radioBtnName) {
+    e.target.checked = false;
+    refs.vacanciesList.classList.remove(targetClassName);
+
+    return;
+  }
+
+  radioBtnName = targetClassName;
+  refs.vacanciesList.classList.remove('autumn', 'spring', 'winter', 'summer');
+  refs.vacanciesList.classList.add(targetClassName);
 }

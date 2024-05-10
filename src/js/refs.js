@@ -17,7 +17,8 @@ const refs = {
   supportMenu: document.querySelector('.js-support-menu'),
   counter: document.querySelectorAll('.js-statistics-value-wrap'),
   statisticsList: document.querySelector('.js-statistics-list'),
-  mainNavigation: document.querySelectorAll('.js-main-navigation')
+  mainNavigation: document.querySelectorAll('.js-main-navigation'),
+  seasonsList: document.querySelector('.js-seasons-list'),
 };
 
 export default refs;

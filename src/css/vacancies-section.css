@@ -260,7 +260,7 @@
 
 @media screen and (max-width: 1279px) {
   .season-wrap::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -277,4 +277,20 @@
   .season-wrap:is(:hover, :focus, :has(:checked))::after {
     background-color: var(--accent-color);
   }
+}
+
+.vacancies-list.winter > li:not(.winter) {
+  display: none;
+}
+
+.vacancies-list.autumn > li:not(.autumn) {
+  display: none;
+}
+
+.vacancies-list.spring > li:not(.spring) {
+  display: none;
+}
+
+.vacancies-list.summer > li:not(.summer) {
+  display: none;
 }
