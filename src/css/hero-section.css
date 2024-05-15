@@ -2,8 +2,7 @@
   height: 700px;
   padding-top: 232px;
   padding-bottom: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
-    url('/images/hero/bg-img-mobile.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url('../images/hero/bg-img-mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -50,8 +49,7 @@
   .hero-section {
     height: 810px;
     padding-top: 304px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
-      url('/images/hero/bg-img-desk.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url('../images/hero/bg-img-desk.jpg');
   }
 
   .hero-slogan {

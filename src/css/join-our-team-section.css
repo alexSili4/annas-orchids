@@ -1,5 +1,5 @@
 .join-our-team-section {
-  background-image: url('/images/join-our-team/bg-img-mobile.jpg');
+  background-image: url('../images/join-our-team/bg-img-mobile.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -17,8 +17,7 @@
 }
 
 .join-our-team-section-form-wrap {
-  transition: opacity var(--transition-duration-and-func),
-    visibility var(--transition-duration-and-func);
+  transition: opacity var(--transition-duration-and-func), visibility var(--transition-duration-and-func);
 }
 
 .join-our-team-form-title {
@@ -33,7 +32,7 @@
 
 @media screen and (min-width: 1280px) {
   .join-our-team-section {
-    background-image: url('/images/join-our-team/bg-img-desk.jpg');
+    background-image: url('../images/join-our-team/bg-img-desk.jpg');
   }
 
   .join-our-team-section-wrap {

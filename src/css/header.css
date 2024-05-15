@@ -65,9 +65,7 @@
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
-  transition: background-color var(--transition-duration-and-func),
-    border-color var(--transition-duration-and-func),
-    color var(--transition-duration-and-func);
+  transition: background-color var(--transition-duration-and-func), border-color var(--transition-duration-and-func), color var(--transition-duration-and-func);
 }
 
 .header-lang-btn:is(:hover, :focus) {
@@ -141,8 +139,6 @@
   font-weight: 400;
   line-height: 1.33;
   text-wrap: nowrap;
-  /* transition: visibility var(--transition-duration-and-func),
-    opacity var(--transition-duration-and-func); */
 }
 
 .phone-btn-link::before {
@@ -153,7 +149,7 @@
   display: block;
   width: 16px;
   height: 8px;
-  background-image: url('/icons/call-us-arrow.svg');
+  background-image: url('../icons/call-us-arrow.svg');
   transform: translateX(-50%);
 }
 
@@ -209,8 +205,7 @@
     width: 128px;
     height: 58px;
     transform: translateX(-50%);
-    transition: opacity var(--transition-duration-and-func),
-      visibility var(--transition-duration-and-func),transform var(--transition-duration-and-func);
+    transition: opacity var(--transition-duration-and-func), visibility var(--transition-duration-and-func), transform var(--transition-duration-and-func);
   }
 
   .phone-btn-link-wrap:is(:hover, :focus) .phone-btn {
