@@ -1,70 +1,52 @@
 <form class="join-us-form">
-  <input
-    class="join-us-form-input js-join-us-form-name-input"
-    type="text"
-    placeholder="Ім&#39;я"
-    name="user-name"
-    required
-  />
-  <input
-    class="join-us-form-input js-join-us-form-phone-input"
-    type="tel"
-    placeholder="+(код країни)(телефон)"
-    name="user-phone"
-    required
-  />
-  <div class="join-communication-radio-btn-list">
-    <label class="join-communication-radio-btn-wrap">
-      <input
-        class="join-communication-radio-btn hidden-element"
-        type="radio"
-        name="join-communication"
-        value="telegram"
-      />
-      <span class="join-communication-custom-radio-btn-wrap">
-        <span class="join-communication-custom-radio-btn">
-          <svg class="join-communication-custom-radio-btn-icon">
-            <use href="/icons/icons.svg#check-mark"></use>
-          </svg>
+  <div></div>
+  <p>
+    <span><input class="join-us-form-input" type="text" placeholder="Ім&#39;я" name="user-name" required /></span>
+  </p>
+  <p>
+    <span><input class="join-us-form-input" type="tel" placeholder="+(код країни)(телефон)" name="user-phone" required /></span>
+  </p>
+  <p>
+    <span>
+      <span class="join-communication-radio-btn-list">
+        <span class="wpcf7-list-item">
+          <label>
+            <input class="join-communication-radio-btn" type="radio" name="join-communication" value="telegram" />
+            <span class="wpcf7-list-item-label">Telegram</span>
+          </label>
+        </span>
+        <span class="wpcf7-list-item">
+          <label>
+            <input class="join-communication-radio-btn" type="radio" name="join-communication" value="viber" />
+            <span class="wpcf7-list-item-label">Viber</span>
+          </label>
+        </span>
+        <span class="wpcf7-list-item">
+          <label>
+            <input class="join-communication-radio-btn" type="radio" name="join-communication" value="call" checked />
+            <span class="wpcf7-list-item-label">Дзвінок</span>
+          </label>
         </span>
       </span>
-      <span class="join-communication-radio-btn-title">Telegram</span>
-    </label>
-    <label class="join-communication-radio-btn-wrap">
-      <input
-        class="join-communication-radio-btn hidden-element"
-        type="radio"
-        name="join-communication"
-        value="viber"
-      />
-      <span class="join-communication-custom-radio-btn-wrap">
-        <span class="join-communication-custom-radio-btn">
-          <svg class="join-communication-custom-radio-btn-icon">
-            <use href="/icons/icons.svg#check-mark"></use>
-          </svg>
-        </span>
-      </span>
-      <span class="join-communication-radio-btn-title">Viber</span>
-    </label>
-    <label class="join-communication-radio-btn-wrap">
-      <input
-        class="join-communication-radio-btn hidden-element"
-        type="radio"
-        name="join-communication"
-        value="call"
-        checked
-      />
-      <span class="join-communication-custom-radio-btn-wrap">
-        <span class="join-communication-custom-radio-btn">
-          <svg class="join-communication-custom-radio-btn-icon">
-            <use href="/icons/icons.svg#check-mark"></use>
-          </svg>
-        </span>
-      </span>
-      <span class="join-communication-radio-btn-title">Дзвінок</span>
-    </label>
-  </div>
-  <button type="submit" class="join-us-form-submit-btn btn">
-    Консультація
-  </button>
+    </span>
+  </p>
+  <p>
+    <button type="submit" class="join-us-form-submit-btn btn">Консультація</button>
+    <span
+      class="wpcf7-spinner"
+      style="
+        visibility: hidden;
+        display: inline-block;
+        background-color: #23282d;
+        opacity: 0.75;
+        width: 24px;
+        height: 24px;
+        border: none;
+        border-radius: 100%;
+        padding: 0;
+        margin: 0 24px;
+        position: relative;
+      "
+    ></span>
+  </p>
 </form>

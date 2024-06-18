@@ -8,7 +8,12 @@
   margin-right: auto;
 }
 
+.join-us-form > p:is(:nth-child(2), :nth-child(3)) > span {
+  display: block;
+}
+
 .join-us-form-input {
+  width: 100%;
   height: 48px;
   outline: none;
   border: 1px solid;
@@ -33,8 +38,17 @@
   border-color: #ffb801;
 }
 
-.join-us-form-input:not(:first-of-type) {
+.join-us-form > p:nth-child(3) {
   margin-top: 8px;
+}
+
+.join-us-form > p:nth-child(4) {
+  margin-top: 16px;
+}
+
+.join-us-form > p:nth-child(4) > span {
+  display: flex;
+  justify-content: center;
 }
 
 .join-communication-radio-btn-list {
@@ -42,22 +56,6 @@
   flex-direction: column;
   align-self: center;
   gap: 4px;
-  margin-top: 16px;
-}
-
-.join-communication-radio-btn-wrap {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.join-communication-radio-btn-title {
-  color: rgba(39, 43, 51, 0.48);
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  transition: color var(--transition-duration-and-func);
 }
 
 .join-communication-custom-radio-btn-wrap {
@@ -69,53 +67,35 @@
   cursor: pointer;
 }
 
-.join-communication-custom-radio-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 16.58px;
-  height: 16.58px;
-  border: 0.77px solid;
-  border-color: #aeaeb2;
-  border-radius: 50%;
-  transition: border-color var(--transition-duration-and-func);
-}
-
-.join-communication-custom-radio-btn-icon {
+.wpcf7-list-item label::before {
+  content: '';
   display: block;
-  width: 15.34px;
-  height: 15.34px;
-  fill: transparent;
-  transition: fill var(--transition-duration-and-func);
+  width: 17px;
+  height: 17px;
+  outline: 0.77px solid;
+  outline-color: #aeaeb2;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: 0.335px 0.335px;
+  background-repeat: no-repeat;
 }
 
-.join-communication-radio-btn:checked
-  + .join-communication-custom-radio-btn-wrap
-  > .join-communication-custom-radio-btn {
-  border-color: transparent;
+.wpcf7-list-item:has(input:checked) label::before {
+  outline-color: transparent;
+  background-image: url('../icons/check.svg');
 }
 
-.join-communication-radio-btn:checked
-  + .join-communication-custom-radio-btn-wrap
-  .join-communication-custom-radio-btn-icon {
-  fill: #ffb801;
-}
-
-.join-communication-radio-btn:checked ~ .join-communication-radio-btn-title {
+.join-communication-radio-btn:checked ~ .wpcf7-list-item-label {
   color: #272b33;
 }
 
-.join-us-form-submit-btn {
-  min-width: 100%;
-  margin-top: 16px;
-  border: none;
-  padding: 12px;
-  align-self: center;
-  color: rgb(0, 0, 0);
+.wpcf7-list-item-label {
+  color: rgba(39, 43, 51, 0.48);
   font-family: Inter;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
+  transition: color var(--transition-duration-and-func);
 }
 
 .join-us-form-wrap.form-not-submitted .join-us-form-success-msg-wrap {
@@ -130,6 +110,36 @@
   pointer-events: none;
 }
 
+.join-us-form-submit-btn {
+  min-width: 100%;
+  border: none;
+  padding: 12px;
+  align-self: center;
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.join-us-form > p:nth-child(5) {
+  margin-top: 16px;
+}
+
+.join-us-form-submit-btn + .wpcf7-spinner {
+  display: none !important;
+}
+
+.wpcf7-list-item input {
+  position: absolute;
+  transform: scale(0);
+}
+.wpcf7-list-item label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 @media screen and (min-width: 1280px) {
   .join-us-form {
     width: 412px;
@@ -142,16 +152,16 @@
     justify-content: center;
     align-items: center;
     gap: 32px;
-    margin-top: 16px;
   }
 
-  .join-communication-radio-btn:checked ~ .join-communication-radio-btn-title {
-    color: #272b33;
+  .join-us-form > p:nth-child(5) {
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .join-us-form-submit-btn {
     min-width: 181px;
-    margin-top: 32px;
   }
 
   .join-us-form-success-msg-wrap {
