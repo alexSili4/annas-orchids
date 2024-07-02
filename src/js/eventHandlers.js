@@ -52,17 +52,13 @@ function toggleModalWinState(e) {
 }
 
 function toggleShowMoreVacancyDetails(e) {
-  const isTargetToggleShowMoreBtn =
-    e.target.classList.contains('js-toggle-show-more-vacancy-details') ||
-    e.target.closest('.js-toggle-show-more-vacancy-details');
+  const isTargetToggleShowMoreBtn = e.target.classList.contains('js-toggle-show-more-vacancy-details') || e.target.closest('.js-toggle-show-more-vacancy-details');
 
   if (!isTargetToggleShowMoreBtn) {
     return;
   }
 
-  const vacancyDetails = e.target
-    .closest('.js-vacancy-card')
-    .querySelector('.js-vacancy-card-details');
+  const vacancyDetails = e.target.closest('.js-vacancy-card').querySelector('.js-vacancy-card-details');
   vacancyDetails.classList.toggle(isHiddenClassName);
 }
 
@@ -105,7 +101,6 @@ function onSeasonsListInput(e) {
     return;
   }
 
-  radioBtnName = targetClassName;
-  refs.vacanciesList.classList.remove('autumn', 'spring', 'winter', 'summer');
-  refs.vacanciesList.classList.add(targetClassName);
+  refs.goodsModalWinTargetSection.classList.remove('autumn', 'spring', 'winter', 'summer');
+  refs.goodsModalWinTargetSection.classList.add(targetClassName);
 }
