@@ -14,8 +14,7 @@ body:not(:has(.join-us-modal-win-backdrop.is-hidden)) {
   align-items: flex-start;
   background-color: rgba(0, 0, 0, 0.48);
   overflow-y: auto;
-  transition: visibility var(--transition-duration-and-func),
-    opacity var(--transition-duration-and-func);
+  transition: visibility var(--transition-duration-and-func), opacity var(--transition-duration-and-func);
 }
 
 .join-us-modal-win-backdrop .join-section-wrap {
@@ -30,6 +29,7 @@ body:not(:has(.join-us-modal-win-backdrop.is-hidden)) {
   border: none;
   padding: 0;
   background-color: transparent;
+  outline: none;
 }
 
 .close-modal-win-btn-icon {

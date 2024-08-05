@@ -67,6 +67,10 @@
   cursor: pointer;
 }
 
+.wpcf7-list-item label {
+  cursor: pointer;
+}
+
 .wpcf7-list-item label::before {
   content: '';
   display: block;
@@ -78,6 +82,10 @@
   background-size: cover;
   background-position: 0.335px 0.335px;
   background-repeat: no-repeat;
+}
+
+.wpcf7-list-item:has(input:is(:focus, :hover)) label::before {
+  outline-color: #ffb801;
 }
 
 .wpcf7-list-item:has(input:checked) label::before {
@@ -120,6 +128,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  outline: none;
 }
 
 .join-us-form > p:nth-child(5) {

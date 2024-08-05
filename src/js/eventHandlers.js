@@ -46,11 +46,6 @@ function toggleShowMoreText(e) {
   hiddenTextElement.classList.toggle(targetClassName);
 }
 
-function toggleModalWinState(e) {
-  e.currentTarget.blur();
-  refs.joinUsModalWin.classList.toggle(isHiddenClassName);
-}
-
 function toggleShowMoreVacancyDetails(e) {
   const isTargetToggleShowMoreBtn = e.target.classList.contains('js-toggle-show-more-vacancy-details') || e.target.closest('.js-toggle-show-more-vacancy-details');
 
@@ -103,4 +98,46 @@ function onSeasonsListInput(e) {
 
   refs.goodsModalWinTargetSection.classList.remove('autumn', 'spring', 'winter', 'summer');
   refs.goodsModalWinTargetSection.classList.add(targetClassName);
+}
+
+let inputIndex = 0;
+const focusableElementsNames = 'input:not([type="hidden"]), button';
+
+function toggleModalWinState(e) {
+  e.currentTarget.blur();
+  refs.joinUsModalWin.classList.toggle(isHiddenClassName);
+
+  const isHiddenModalWin = refs.joinUsModalWin.classList.contains(isHiddenClassName);
+
+  if (isHiddenModalWin) {
+    document.removeEventListener('keydown', onTabKeyPress);
+  } else {
+    document.addEventListener('keydown', onTabKeyPress);
+
+    const focusableElements = refs.joinUsModalWin.querySelectorAll(focusableElementsNames);
+    const firstInputIndex = [...focusableElements].findIndex(({ nodeName }) => nodeName === 'INPUT');
+    inputIndex = firstInputIndex;
+    const firstInput = focusableElements[firstInputIndex];
+
+    setTimeout(() => {
+      firstInput.focus();
+      inputIndex += 1;
+    }, 100);
+  }
+}
+
+function onTabKeyPress(e) {
+  const focusableElements = refs.joinUsModalWin.querySelectorAll(focusableElementsNames);
+
+  if (e.code === 'Tab') {
+    e.preventDefault();
+    const isLastElement = inputIndex === focusableElements.length - 1;
+    focusableElements[inputIndex].focus();
+
+    if (isLastElement) {
+      inputIndex = 0;
+    } else {
+      inputIndex += 1;
+    }
+  }
 }
