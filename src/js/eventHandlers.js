@@ -21,6 +21,14 @@ refs.mobileMenuToggleBtn.forEach((el) => {
 });
 refs.mobileMenuList.addEventListener('click', onMobileMenuListClick);
 
+refs.forms.forEach((form) => {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const newUrl = window.location.protocol + '//' + window.location.host + window.location.pathname + '?submit=success';
+    history.pushState({ path: newUrl }, '', newUrl);
+  });
+});
+
 function toggleSupportMenuState(e) {
   e.currentTarget.blur();
   refs.supportMenu.classList.toggle('is-hidden-menu');

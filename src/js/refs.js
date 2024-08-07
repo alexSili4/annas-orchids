@@ -19,6 +19,7 @@ const refs = {
   statisticsList: document.querySelector('.js-statistics-list'),
   mainNavigation: document.querySelectorAll('.js-main-navigation'),
   seasonsList: document.querySelector('.js-seasons-list'),
+  forms: document.querySelectorAll('form'),
 };
 
 export default refs;
