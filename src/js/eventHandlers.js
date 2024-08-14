@@ -104,8 +104,9 @@ function onSeasonsListInput(e) {
     return;
   }
 
-  refs.goodsModalWinTargetSection.classList.remove('autumn', 'spring', 'winter', 'summer');
-  refs.goodsModalWinTargetSection.classList.add(targetClassName);
+  radioBtnName = targetClassName;
+  refs.vacanciesList.classList.remove('autumn', 'spring', 'winter', 'summer');
+  refs.vacanciesList.classList.add(targetClassName);
 }
 
 let inputIndex = 0;
