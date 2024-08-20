@@ -1,14 +1,17 @@
 .hero-section {
+  position: relative;
   height: 700px;
   padding-top: 232px;
   padding-bottom: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url('../images/hero/bg-img-mobile.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 }
 
 .hero-slogan {
+  position: relative;
+  z-index: 10;
   color: var(--white-color);
   font-family: Inter;
   font-size: 28px;
@@ -19,6 +22,8 @@
 }
 
 .hero-title {
+  position: relative;
+  z-index: 10;
   margin-top: 16px;
   color: var(--white-color);
   font-family: Inter;
@@ -29,6 +34,8 @@
 }
 
 .hero-join-us-btn {
+  position: relative;
+  z-index: 10;
   min-width: 100%;
   margin-top: 190px;
   border: none;
@@ -45,11 +52,21 @@
   height: 100%;
 }
 
+.hero-bg-video {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateX(-50%);
+}
+
 @media screen and (min-width: 1280px) {
   .hero-section {
     height: 810px;
     padding-top: 304px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url('../images/hero/bg-img-desk.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32));
   }
 
   .hero-slogan {
@@ -69,5 +86,19 @@
   .hero-join-us-btn {
     min-width: 237px;
     margin-top: 32px;
+  }
+
+  .hero-bg-video {
+    top: 0px;
+  }
+
+  .hero-bg-video.mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .hero-bg-video.desk {
+    display: none;
   }
 }
